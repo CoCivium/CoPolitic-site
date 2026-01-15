@@ -1,0 +1,8 @@
+# Normalize text files to LF in repo; let Windows checkout be CRLF if needed
+* text=auto
+
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.md   text eol=lf
+*.svg  text eol=lf

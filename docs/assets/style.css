@@ -29,3 +29,17 @@ p { margin: 0 0 10px 0; opacity: 0.88; }
 .logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
 .logo-img { width:34px; height:34px; display:block; border-radius:8px; background:#fff; }
 .logo-text { font-weight:700; letter-spacing:0.2px; }
+
+/* --- PLACEHOLDER banner (public-safe preview) --- */
+.placeholder-banner{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.3;
+  background: #fff3cd;
+  color: #222;
+  border-bottom: 1px solid #f0d58c;
+}
+.placeholder-banner strong{ letter-spacing: 0.2px; }

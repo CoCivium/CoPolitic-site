@@ -105,9 +105,14 @@ def validate(m: dict, html: str, llms: str, html_sha: str) -> dict:
     nodes = m["cross_site_relations"]
     need(len(nodes) == 4, "CROSS_SITE_RELATION_SCOPE")
     need({x["site"] for x in nodes} == {"CoCivium/CoCivium", "CoCivium/CoAcademy", "CoCivium/CoAura", "CoCivium/CoSources"}, "CROSS_SITE_COVERAGE")
-    need(all(x["relation"] != "SYNCHRONIZED_DEPLOYMENT" and "NO_" in x["relation"] or
-             x["relation"] == "SOURCE_DEPS__NOT_COPIED_CONTENT"
-             for x in nodes), "SYNC_INFERENCE")
+    allowed_relations = {
+        "CoCivium/CoCivium": "RELATES_TO__NOT_SYNCED_MIRROR",
+        "CoCivium/CoAcademy": "SOURCE_DEPS__NOT_COPIED_CONTENT",
+        "CoCivium/CoAura": "POSSIBLE_UI_REUSE__NO_DEPLOYED_INTEGRATION",
+        "CoCivium/CoSources": "POSSIBLE_PROVENANCE_REUSE__NO_ACTIVE_REPLICATION",
+    }
+    need(all(x["relation"] == allowed_relations[x["site"]] for x in nodes),
+         "SYNC_INFERENCE")
 
     audiences = {x["class"]: x for x in m["client_hypotheses"]}
     need({"machine_ai_or_tool","human_individual_or_group","youth_future_learner","future_ai_descendant"} <= set(audiences), "AUDIENCE_SCOPE")
@@ -184,7 +189,7 @@ class SiteTests(unittest.TestCase):
         self.assertEqual(self.m["domains"]["dns_https_deployment"], "NOT_VERIFIED")
 
     def test_07_no_cross_site_replication_claim(self):
-        self.assertTrue(all("NOT_" in x["relation"] or x["relation"] == "SOURCE_DEPS__NOT_COPIED_CONTENT" for x in self.m["cross_site_relations"]))
+        self.assertTrue(all(("NOT_" in x["relation"] or "NO_" in x["relation"]) for x in self.m["cross_site_relations"]))
 
     def test_08_customer_hypothesis_not_customer_count(self):
         self.assertTrue(all(x["actual_demand"] == "NOT_MEASURED" for x in self.m["client_hypotheses"]))

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="A source-based, nonpartisan prototype for learning how civic claims become accountable institutional choices.">
+  <title>CoPolitic | From claims to accountable choices</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+      --background:#101b29;--panel:#1a2a3a;--line:#4a657a;--foreground:#f2f7ff;
+      --sub:#ccdae9;--accent:#a3e8d4;--focus:#ffe7aa}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--background);color:var(--foreground);line-height:1.58}
+    a{color:var(--accent);text-underline-offset:.22em}a:hover{color:#fff}a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:3px}
+    .skip{position:absolute;top:-100px;left:10px;background:#fff;color:#111;padding:8px;z-index:3}
+    .skip:focus{top:10px}.wrap{max-width:1050px;margin:auto;padding:0 22px}
+    header{border-bottom:1px solid var(--line);background:#142231}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;gap:15px;padding-top:17px;padding-bottom:17px;flex-wrap:wrap}
+    .brand{text-decoration:none;font-size:1.2rem;font-weight:800;color:var(--foreground)}
+    header nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.9rem}
+    .hero{padding:clamp(38px,7vw,80px) 0 42px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:750;font-size:.79rem}
+    h1{font-size:clamp(2rem,6vw,4rem);line-height:1.12;letter-spacing:-.035em;max-width:800px;margin:12px 0}
+    h2{font-size:clamp(1.4rem,3vw,2rem);margin:0 0 12px}h3{margin:0 0 8px;font-size:1.15rem}
+    p{margin:0 0 12px}.lead{font-size:1.1rem;color:var(--sub);max-width:690px}
+    .cta{display:inline-block;background:var(--accent);color:#08252b;font-weight:800;
+      text-decoration:none;padding:13px 19px;border-radius:12px;margin-top:16px}
+    .cta:hover{background:#f4fff7;color:#08141b}
+    .status{margin-top:22px;border-left:4px solid #c3b1fc;padding:11px 14px;
+      background:#243044;color:var(--sub);font-size:.89rem;max-width:780px}
+    section{padding:28px 0}.subtitle{color:var(--sub);max-width:780px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:22px 0}
+    .card{border:1px solid var(--line);border-radius:15px;background:var(--panel);padding:19px;
+      display:flex;flex-direction:column;min-height:235px}
+    .card p{color:var(--sub);font-size:.94rem}.card a{font-weight:750;margin-top:auto}
+    .tag{display:block;color:var(--accent);font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+    .steps{counter-reset:st;padding:0;list-style:none;display:grid;gap:12px;margin:20px 0}
+    .steps li{counter-increment:st;display:flex;gap:14px;background:var(--panel);
+      border:1px solid var(--line);border-radius:12px;padding:15px}
+    .steps li:before{content:counter(st);height:30px;width:30px;flex-shrink:0;text-align:center;border-radius:50%;
+      background:var(--accent);color:#0d2630;font-weight:800}
+    .steps strong{display:block}.steps span{color:var(--sub);font-size:.93rem}
+    .pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:20px 0}
+    .box{padding:20px;border:1px solid var(--line);border-radius:15px;background:#1a2a3a}
+    .box p{color:var(--sub)}details{margin-top:12px;background:#192b39;border:1px solid var(--line);
+      padding:15px 18px;border-radius:13px}summary{cursor:pointer;font-weight:750}
+    details p{margin-top:10px;color:var(--sub)}
+    footer{border-top:1px solid var(--line);margin-top:32px;padding:26px 0 48px;color:var(--sub);font-size:.85rem}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.pair{grid-template-columns:1fr}
+      header nav{gap:10px}.card{min-height:unset}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media(prefers-color-scheme:light){
+      :root{color-scheme:light;--background:#f6f9fb;--panel:#fff;--line:#657f93;--foreground:#142330;
+      --sub:#344756;--accent:#065b4c;--focus:#7d3d0a}
+      header{background:#eaf1f5}.cta{background:#065b4c;color:white}.cta:hover{background:#073d36;color:white}
+      .status{background:#e9e7f4;color:#2b3550}.steps li:before{background:#065b4c;color:white}
+      .box{background:#fff}details{background:#fff}.tag{color:#05584c}
+    }
+  </style>
+</head>
+<body id="top">
+<a href="#main" class="skip">Skip to main content</a>
+<header><div class="wrap">
+  <a class="brand" href="#top">CoPolitic <span aria-hidden="true">⊂</span></a>
+  <nav aria-label="Page sections">
+    <a href="#begin">Begin</a><a href="#pattern">From meme to institution</a><a href="#evidence">Evidence and limits</a>
+  </nav>
+</div></header>
+<main id="main" class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Nonpartisan civic learning · Source-first candidate</div>
+    <h1>Better public choices begin with checkable claims.</h1>
+    <p class="lead">How can an idea become a rule that people can understand, challenge, refuse where appropriate, and correct? Start with one claim, follow its evidence, and compare alternatives.</p>
+    <a class="cta" href="#begin">Explore one civic question</a>
+    <div class="status" role="note">
+      <strong>Prototype, not a deployed civic service.</strong> This repository edition is not verified as accessible at copolitic.org. It is not a political party, electoral authority, campaign, government service, public-vote platform, or forum collecting allegations. No account, tracking, enrollment or messages are initiated here.
+    </div>
+  </div>
+
+  <section id="begin" aria-labelledby="begin-heading">
+    <h2 id="begin-heading">Choose one useful starting point</h2>
+    <p class="subtitle">Each link opens an existing public source artifact. These are inspectable repository files, not claims that the underlying applications are deployed or independently accepted.</p>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Understand</span><h3>How do I check a civic claim?</h3>
+        <p>Explore the source-based civic integrity guide. Separate official results and records from opinions, interpretation and unknowns.</p>
+        <a href="https://github.com/CoCivium/CoAcademy/blob/master/docs/civic-integrity/index.html">Read the civic source guide</a>
+      </article>
+      <article class="card">
+        <span class="tag">Examine</span><h3>What does election money measure?</h3>
+        <p>Try a reader-supplied aggregate arithmetic example. It does not price votes or assign integrity ratings to people.</p>
+        <a href="https://github.com/CoCivium/CoAcademy/blob/master/docs/civic-integrity/money-and-elections/index.html">Inspect the example and its assumptions</a>
+      </article>
+      <article class="card">
+        <span class="tag">Challenge</span><h3>How can I improve an explanation?</h3>
+        <p>Inspect CoRelay's voluntary challenge and correction paths. Criticism is evidence for improvement, not a loyalty test.</p>
+        <a href="https://github.com/CoCivium/CoAcademy/blob/master/docs/relay/index.html">Try it. Challenge it. Improve it.</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="pattern" aria-labelledby="pattern-heading">
+    <h2 id="pattern-heading">From meme to accountable institution</h2>
+    <p class="subtitle">A memorable phrase is a useful compression of an idea. It is not a mandate. Every proposed institution must survive interpretation, counterexamples, affected-party deliberation and legitimate authorization.</p>
+    <ol class="steps">
+      <li><div><strong>Meme: “No crowns”</strong><span>A short aspiration against captured power. It is not proof that anyone has escaped power imbalances.</span></div></li>
+      <li><div><strong>Principle: authority must be limited and accountable</strong><span>Define who has standing, what decisions require consent, and what rights cannot be voted away.</span></div></li>
+      <li><div><strong>Mechanism: review, appeal and revocation</strong><span>Propose limited terms, conflict disclosure, records of reasons, a protected appeal and practical exit.</span></div></li>
+      <li><div><strong>Counterexample: the hidden crown</strong><span>If one funder, owner, moderator or model can override an affected person's rights, the rule fails its own principle.</span></div></li>
+      <li><div><strong>Trial and revision</strong><span>Use synthetic cases and voluntary review before any real institutional application. Preserve dissent and the prior version.</span></div></li>
+    </ol>
+    <div class="pair">
+      <div class="box"><h3>Evidence has weight</h3><p>Good measurement and independent verification matter when deciding what is factually supported. Expertise does not make a person's fundamental civic worth greater.</p></div>
+      <div class="box"><h3>Rights have standing</h3><p>Participation, refusal, due process and protection of affected people are not automatically overridden by popularity or computational consensus.</p></div>
+    </div>
+  </section>
+
+  <section id="evidence" aria-labelledby="evidence-heading">
+    <h2 id="evidence-heading">Sources, limits and corrections</h2>
+    <p class="subtitle">Claims need traceable sources. Institutional proposals need legitimacy. Websites need accessible first-use proof. These are different questions.</p>
+    <details><summary>Show source lineage and correction routes</summary>
+      <p><a href="https://github.com/CoCivium/CoAcademy/blob/master/docs/civic-integrity/POST_ELECTION_CONTINUITY_R0.md">Post-election source and correction protocol</a> · <a href="https://github.com/CoCivium/CoCivium/blob/main/docs/Architecture/COONTPRINCIPLE_EVOLVING_MEANING_R0_20261101.md">CoOntPrinciple: evolving meaning and constraints</a> · <a href="https://github.com/CoCivium/CoCivium/blob/main/docs/Governance/COREVIEW_SPINE_R0.md">CoReviewSpine: evidence and independent acceptance</a>.</p>
+      <p>Propose public-source corrections at <a href="https://github.com/CoCivium/CoPolitic-site/issues">the CoPolitic repository issues page</a>. A GitHub account may be required. Do not submit personal data, private allegations, credentials or someone else's sensitive information.</p>
+    </details>
+    <details><summary>What this page does not establish</summary>
+      <p>No live governance institution, validated consensus, representation of all affected parties, civic adoption, electoral findings, certification, domain ownership, independent-user success or implemented constitutional authority is claimed.</p>
+    </details>
+    <p style="margin-top:18px">For official information about elections or reporting concerns, use the relevant election authority or government channels in your own jurisdiction. This page is not a substitute.</p>
+  </section>
+</main>
+<footer><div class="wrap"><strong>CoPolitic</strong> · Candidate public education surface · No tracking scripts, cookies, newsletter forms, political targeting or external account actions on this page. Other linked services have their own policies. <a href="#top">Back to start</a>.</div></footer>
+</body></html>

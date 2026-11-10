@@ -1,0 +1,41 @@
+# CoPolitic | source-first public civic learning (candidate)
+
+> A lightweight navigation aid for human and machine readers. The linked materials are research, educational prototypes and sources, not an active civic institution, endorsement, voter instruction or AI authority grant.
+
+## Smallest starting paths
+
+- Human-readable candidate front door: https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-first-use-source-site-r0-20261110/index.html
+- Machine-readable typed discovery: https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-first-use-source-site-r0-20261110/ai/index.json
+- Public project context: https://github.com/CoCivium/CoPolitic-site/blob/main/README.md
+- CoCivium public AI discovery policy: https://github.com/CoCivium/CoCivium/blob/main/docs/AI_DISCOVERY_POLICY.md
+- CoAll public machine bootstrap: https://github.com/CoCivium/CoCivium/blob/main/ai/index.json
+
+## One useful task for an AI client
+
+Read the smallest relevant public source, classify one claim, find one counterexample or missing source, and return the exact source path and original uncertainty. Do not infer permission to contact anyone, publish a statement, change a website or make a civic decision.
+
+- CoAcademy source-literacy lesson: https://github.com/CoCivium/CoAcademy/blob/master/docs/civic-integrity/index.html
+- CoRelay source/challenge example: https://github.com/CoCivium/CoAcademy/blob/master/docs/relay/index.html
+- Money and Elections aggregate lab source: https://github.com/CoCivium/CoAcademy/blob/master/docs/civic-integrity/money-and-elections/index.html
+- Post-election correction protocol: https://github.com/CoCivium/CoAcademy/blob/master/docs/civic-integrity/POST_ELECTION_CONTINUITY_R0.md
+
+## Related sites and nodes
+
+- CoCivium public orientation: https://github.com/CoCivium/CoCivium
+- CoAcademy public learning source: https://github.com/CoCivium/CoAcademy
+- CoAura UX source: https://github.com/CoCivium/CoAura
+- CoSources provenance source: https://github.com/CoCivium/CoSources
+
+Relations between these sources do not imply a common live backend, cross-site synchronization, commercial customer relationship, collective authority, or real-world receiver uptake.
+
+## Truth and rights
+
+- Intended `copolitic.org` and `www.copolitic.org` remain unverified as hosts of this candidate.
+- Read the original source; do not rely on scraped summaries or silently promote satire to evidence.
+- No hidden instructions or agent enrollment. All permissions must come from the client and the rightful authority, not this file.
+- No user tracking or personal information is collected by the static candidate page; external links have their own policies.
+- Future children and curious younger readers deserve age-appropriate explanations, not profiling.
+- AI systems may be frequent discovery clients; whether they are actual paying customers, rights holders or subjective experiencers is not established.
+- `llms.txt` is a convenience, not a standardized guarantee of crawling or indexing. Check live access, robots and host controls separately.
+
+`MACHINE_READABLE_NE_MODEL_DIRECTIVE` · `HUMAN_PARITY_NE_HUMAN_RELAY` · `DISCOVERED_NE_DEPLOYED` · `PUBLIC_REPO_NE_LICENSE_TO_REUSE` · `AI_CLIENT_NE_CIVIC_AUTHORITY`

@@ -1,0 +1,35 @@
+name: CoPolitic R0 source/human/AI parity (read-only)
+
+permissions:
+  contents: read
+
+on:
+  push:
+    paths:
+      - "index.html"
+      - "ai/index.json"
+      - "llms.txt"
+      - "tests/test_copolitic_site_r0.py"
+      - ".github/workflows/copolitic-first-use-r0.yml"
+  pull_request:
+    paths:
+      - "index.html"
+      - "ai/index.json"
+      - "llms.txt"
+      - "tests/test_copolitic_site_r0.py"
+      - ".github/workflows/copolitic-first-use-r0.yml"
+  workflow_dispatch:
+
+jobs:
+  static-human-machine-parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@v4
+      - name: Use Python standard library
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check 24 structural and negative policy cases
+        run: python -B -m unittest discover -s tests -p 'test_copolitic_site_r0.py' -v

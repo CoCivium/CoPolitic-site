@@ -1,0 +1,81 @@
+{
+  "schema": "CoPolitic.ResearchCitationLedger.W03",
+  "checked_utc": "2026-11-18T17:30:00Z",
+  "checked_by": "W03 (Claude Opus 5.5, claude.ai session)",
+  "method_note": "The workspace shell cannot reach scholarly hosts (egress allowlist) and the direct page fetcher refused these hosts. Scholarly links were confirmed through web-search indexes that returned the exact landing page or DOI with matching title and author. GitHub links were confirmed by resolving the path at the current remote commit with git. No HTTP 200 was observed directly from this session for any external URL. 'exists' means the target is confirmed to exist; it does not confirm that the page supports the claim beyond title and abstract.",
+  "citations": [
+    {
+      "page": "research/coscendence-synthetic-motives/index.html",
+      "href": "https://doi.org/10.1093/jcmc/zmag009",
+      "direct_fetch": "unreachable_from_session",
+      "existence": "CONFIRMED_VIA_SEARCH_INDEX",
+      "resolved_to": "https://academic.oup.com/jcmc/article/31/3/zmag009/8692819",
+      "identified_as": "Wu, Y. & Shen, F. (2026). Machine agency attribution in human-AI interaction: developing and validating an analytical framework. Journal of Computer-Mediated Communication 31(3), zmag009. Published 25 May 2026.",
+      "change": "Link text expanded to full title and journal."
+    },
+    {
+      "page": "research/coscendence-synthetic-motives/index.html",
+      "href": "https://link.springer.com/article/10.1007/s13347-026-01133-1",
+      "direct_fetch": "unreachable_from_session",
+      "existence": "CONFIRMED_VIA_SEARCH_INDEX",
+      "resolved_to": "https://link.springer.com/article/10.1007/s13347-026-01133-1",
+      "identified_as": "Howdle, G. (2026). Anthropomorphising AI: Two Modes, Two Errors. Philosophy & Technology 39(3), article 140. Online 15 Jul 2026. CC BY.",
+      "change": "Journal and article number added."
+    },
+    {
+      "page": "research/coscendence-synthetic-motives/index.html",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/42687985/",
+      "direct_fetch": "unreachable_from_session",
+      "existence": "CONFIRMED_VIA_SEARCH_INDEX",
+      "resolved_to": "https://pubmed.ncbi.nlm.nih.gov/42687985/",
+      "identified_as": "Chella, A. (2026). Sentient AI in robots and agents: prolegomena for an evidence-based research program. Frontiers in Psychology 17:1903644. doi:10.3389/fpsyg.2026.1903644. PMCID PMC13533653.",
+      "change": "Author was missing from the original link text; added with journal and PMID."
+    },
+    {
+      "page": "research/coscendence-synthetic-motives/index.html",
+      "href": "https://doi.org/10.6028/NIST.AI.600-1",
+      "direct_fetch": "unreachable_from_session",
+      "existence": "CONFIRMED_VIA_SEARCH_INDEX",
+      "resolved_to": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "identified_as": "NIST AI 600-1, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile. NIST, July 2024 (released 26 Jul 2024).",
+      "change": "Report number and month added."
+    },
+    {
+      "page": "research/beyond-legacy-ai-governance/index.html",
+      "href": "https://github.com/CoCivium/CoAcademy/blob/master/docs/civic-integrity/index.html",
+      "direct_fetch": "http_403_from_session_proxy",
+      "existence": "CONFIRMED_VIA_GIT",
+      "resolved_to": "CoCivium/CoAcademy@615b0e99ad4fb9ad2f126d71be0d57da82f98937:docs/civic-integrity/index.html blob a756e8c489a733741e53c3320dd458624433141f",
+      "identified_as": "CoAcademy Civic Integrity Support page (repository source; not proof of a hosted page).",
+      "change": "none"
+    },
+    {
+      "page": "research/beyond-legacy-ai-governance/index.html",
+      "href": "https://github.com/CoCivium/CoAcademy/blob/master/docs/relay/index.html",
+      "direct_fetch": "http_403_from_session_proxy",
+      "existence": "CONFIRMED_VIA_GIT",
+      "resolved_to": "CoCivium/CoAcademy@615b0e99ad4fb9ad2f126d71be0d57da82f98937:docs/relay/index.html blob 1389dfffa62081327bd52fc0a4f35ce25f36ee08",
+      "identified_as": "CoAcademy CoRelay research onramp (repository source).",
+      "change": "none"
+    },
+    {
+      "page": "research/beyond-legacy-ai-governance/index.html",
+      "href": "https://github.com/CoCivium/CoAcademy/issues/new",
+      "direct_fetch": "http_403_from_session_proxy",
+      "existence": "REPO_CONFIRMED_VIA_GIT__ISSUE_FORM_NOT_VERIFIED",
+      "resolved_to": "CoCivium/CoAcademy exists (HEAD 615b0e99). Whether issues are enabled was not checked.",
+      "identified_as": "Correction route, not a citation. Requires a GitHub account.",
+      "change": "none"
+    }
+  ],
+  "noindex_decision": {
+    "decision": "KEEP noindex,nofollow on all three research pages",
+    "reasons": [
+      "The pages are R0 candidates that say they are not peer reviewed, not published and not deployed; indexing would present them as public research.",
+      "index.html cannot link to them yet without breaking the PR #1 gate (see W03_RECONCILIATION.md), so they are not yet part of the reviewed public surface.",
+      "The PR #1 release gate holds the external domain; removing noindex is a publication decision belonging to that gate, not to this branch.",
+      "nofollow is kept so these drafts pass no ranking signal to cited third-party pages before review."
+    ],
+    "reversal_condition": "Remove only in the same change that links the research from index.html, updates ai/index.json and the pinned blob in tests/test_copolitic_site_r0.py, and passes the release gate."
+  }
+}

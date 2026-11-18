@@ -182,6 +182,13 @@ def check_page(page_rel, html, ledger):
                   if "epi" in x.attrs.get("class", "").split()]
         need(any(l.startswith(LABELS[kind]) for l in labels),
              "MISSING_VISIBLE_LABEL: " + text.strip()[:50])
+        if holder.tag == "details":
+            # A collapsed <details> renders only its <summary>; the label must live there.
+            summ = next((x for x in holder.children if x.tag == "summary"), None)
+            need(summ is not None and any(
+                "epi" in x.attrs.get("class", "").split()
+                and x.all_text().strip().lower().startswith(LABELS[kind])
+                for x in summ.walk()), "LABEL_HIDDEN_IN_COLLAPSED_DETAILS: " + text.strip()[:50])
 
     # recorded decision: keep noindex,nofollow
     need(t.robots == ["noindex,nofollow"], "NOINDEX_DECISION_DRIFT")
@@ -296,6 +303,15 @@ class W03ResearchTests(unittest.TestCase):
     def test_20_reject_noindex_removal(self):
         bad = self.html[self.P].replace("noindex,nofollow", "index,follow")
         with self.assertRaisesRegex(Invalid, "NOINDEX_DECISION_DRIFT"):
+            self.run_all({self.P: bad})
+
+    def test_22_reject_label_hidden_in_collapsed_details(self):
+        # Regression for R1 browser finding: label inside a closed <details> body is not visible.
+        bad = self.html[self.P].replace(
+            '<summary><span class="epi">Label: Fiction / mythos</span>G_dSide+ mythos</summary><p>',
+            '<summary>G_dSide+ mythos</summary><p><span class="epi">Label: Fiction / mythos</span>')
+        self.assertNotEqual(bad, self.html[self.P])
+        with self.assertRaisesRegex(Invalid, "LABEL_HIDDEN_IN_COLLAPSED_DETAILS"):
             self.run_all({self.P: bad})
 
     def test_21_reject_http_citation(self):

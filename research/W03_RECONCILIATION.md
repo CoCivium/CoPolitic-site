@@ -29,3 +29,12 @@ To unblock, one change outside W03 scope must do all of the following: add the l
 
 - The brief says PR #1 contains a CNAME. `038a87a` has no CNAME file.
 - `.github/workflows/copolitic-first-use-r0.yml` runs only `test_copolitic_site_r0.py`, so CI will not run `test_w03_research.py` until someone widens the workflow, which is outside W03 scope.
+
+## R1 cycle (2026-11-18, same worker and session; not independent review)
+
+- **Rebased** from `038a87a` onto the new PR #1 head, `218b43f`. That head adds a Chromium first-use gate, and `038a87a` is its ancestor, so the rebase was clean. Pre-rebase head `d0b56c7` is kept locally as `w03-r1-pre-rebase-d0b56c7`.
+- **Falsification:** loopback Chromium (Chrome headless, playwright-core 1.56.0) at 320 and 1280 px. The labels on the two collapsed `<details>` sections ("CoScendence+ futures" and "G_dSide+ mythos") **were not visible** without user interaction. The static R0 gate had passed them.
+- **Fix:** both labels now sit inside `<summary>`. The static gate adds `LABEL_HIDDEN_IN_COLLAPSED_DETAILS` and regression test `test_22`, and rejects the R0 page.
+- **Provenance note:** an uncommitted working-tree change of unknown authorship (mtime 2026-11-18 12:57 −05:00) made the byte-identical fix before R1 began. It was saved as a patch, stashed and not committed. The R1 commit was produced independently by W03 after its own browser test showed the failure. Identical bytes are **duplicate content, not independent validation**.
+- **After the fix:** Chromium shows all labels visible, 0 px overflow at 320 px, 0 scripts and 0 external requests. Each page's home link was clicked and lands on `/`. Label contrast is 9.5:1 or better (WCAG AAA).
+- The PR #1 Chromium gate still passes on this branch, since `index.html` is unchanged.

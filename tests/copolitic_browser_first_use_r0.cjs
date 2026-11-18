@@ -63,7 +63,7 @@ async function noEffectfulControls(page) {
     let externalRequests = 0, blockedRoutes = 0;
     await context.route('**/*', async route=>{
       const u = new URL(route.request().url());
-      if (u.origin !== origin || !pages.has(u.pathname)) {
+      if (u.origin !== origin || (!pages.has(u.pathname) && u.pathname !== '/favicon.ico')) {
         if (u.origin !== origin) externalRequests++;
         blockedRoutes++;
         await route.abort('blockedbyclient');

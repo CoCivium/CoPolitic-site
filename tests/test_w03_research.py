@@ -237,12 +237,16 @@ class W03ResearchTests(unittest.TestCase):
         self.assertTrue(d["decision"].startswith("KEEP"))
         self.assertGreaterEqual(len(d["reasons"]), 2)
 
-    def test_07_front_door_untouched(self):
-        # W03 may not alter index.html; PR #1 pins its blob.
+    def test_07_front_door_matches_manifest_pin(self):
+        # Single source of truth: ai/index.json pins the front-door blob.
+        # W03 does not re-pin it here, so a later owner change needs one update, not two.
         from hashlib import sha1
         data = (ROOT / "index.html").read_bytes()
         blob = sha1(b"blob %d\x00" % len(data) + data).hexdigest()
-        self.assertEqual(blob, "1ae823ad0072cb310c2f30f7cb464c05b375a43f")
+        m = json.loads((ROOT / "ai/index.json").read_text(encoding="utf-8"))
+        pin = next(s["blob_sha1"] for s in m["discovered_sources"]
+                   if s["repo"] == "CoCivium/CoPolitic-site" and s["path"] == "index.html")
+        self.assertEqual(blob, pin)
 
     # negative checks: the gate must reject these
     P = "research/coscendence-synthetic-motives/index.html"

@@ -1,5 +1,7 @@
 # CoPolitic | Public-policy research pointer
 
+> **2026-11-10 candidate update (review branch only):** A static [human-first start page](index.html), typed [AI source-navigation index](ai/index.json), optional [language-model navigation](llms.txt) and [read-only CI gate](.github/workflows/copolitic-first-use-r0.yml) now exist in a proposed branch. All source links refer to public GitHub objects and carry explicit effect/receiver bounds. No `copolitic.org` deployment, external client indexing, independent first-use, political authority, new customer, AI enrollment or rights to redistribute is established. The existing mainline README below remains the verified earlier public-source pointer until approved merge.
+
 **Status, October 24, 2026: public GitHub source pointer only.**
 This repository is a policy/governance-facing placeholder. A connected web domain or active publication under copolitic.org or copolitic.com is **not verified**. Its old state was a single-line scaffold; this README is an informational pointer, not a deployed website.
 

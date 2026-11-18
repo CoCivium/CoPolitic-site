@@ -1,0 +1,67 @@
+{
+  "schema": "copolitic.sources.lock/r1",
+  "observed_at": "2026-11-18T15:50:00Z",
+  "meaning": "Each external source the page links to existed at this exact commit with this exact git blob id when observed. Floating refs (master/main) in ai/index.json may drift; re-verify with tools/verify_sources_lock.py before release.",
+  "nonclaims": [
+    "LOCKED_SOURCE_NE_RENDERED_PAGE_LIVE",
+    "LOCKED_SOURCE_NE_ENDORSEMENT"
+  ],
+  "sources": [
+    {
+      "repo": "CoCivium/CoAcademy",
+      "ref": "master",
+      "commit": "615b0e99ad4fb9ad2f126d71be0d57da82f98937",
+      "path": "docs/civic-integrity/index.html",
+      "blob": "a756e8c489a733741e53c3320dd458624433141f"
+    },
+    {
+      "repo": "CoCivium/CoAcademy",
+      "ref": "master",
+      "commit": "615b0e99ad4fb9ad2f126d71be0d57da82f98937",
+      "path": "docs/civic-integrity/money-and-elections/index.html",
+      "blob": "569522824243bf21d144752375974222dff35366"
+    },
+    {
+      "repo": "CoCivium/CoAcademy",
+      "ref": "master",
+      "commit": "615b0e99ad4fb9ad2f126d71be0d57da82f98937",
+      "path": "docs/relay/index.html",
+      "blob": "1389dfffa62081327bd52fc0a4f35ce25f36ee08"
+    },
+    {
+      "repo": "CoCivium/CoAcademy",
+      "ref": "master",
+      "commit": "615b0e99ad4fb9ad2f126d71be0d57da82f98937",
+      "path": "docs/civic-integrity/POST_ELECTION_CONTINUITY_R0.md",
+      "blob": "82823cdd80864b58b854c5ce6373a6f030c08dfd"
+    },
+    {
+      "repo": "CoCivium/CoCivium",
+      "ref": "main",
+      "commit": "090c532627cd014e6c41355ddd70b90a56cc03ff",
+      "path": "docs/AI_DISCOVERY_POLICY.md",
+      "blob": "7fdac031ea710dbea26272f009c64a4ec3e1add0"
+    },
+    {
+      "repo": "CoCivium/CoCivium",
+      "ref": "main",
+      "commit": "090c532627cd014e6c41355ddd70b90a56cc03ff",
+      "path": "docs/Architecture/CONODE_PARTICIPATION_R0.md",
+      "blob": "aaa420620826d46acbb45a9698504b3247fa197a"
+    },
+    {
+      "repo": "CoCivium/CoCivium",
+      "ref": "main",
+      "commit": "090c532627cd014e6c41355ddd70b90a56cc03ff",
+      "path": "docs/Architecture/COONTPRINCIPLE_EVOLVING_MEANING_R0_20261101.md",
+      "blob": "8aaa16190f036ac716d0655c2a5a44a4aeeddf56"
+    },
+    {
+      "repo": "CoCivium/CoCivium",
+      "ref": "main",
+      "commit": "090c532627cd014e6c41355ddd70b90a56cc03ff",
+      "path": "docs/Governance/COREVIEW_SPINE_R0.md",
+      "blob": "e7cf641a991338d6826c586740f188b5db6cb941"
+    }
+  ]
+}

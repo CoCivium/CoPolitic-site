@@ -9,14 +9,20 @@ on:
       - "index.html"
       - "ai/index.json"
       - "llms.txt"
-      - "tests/test_copolitic_site_r0.py"
+      - "tests/**"
+      - "ai/sources.lock.json"
+      - "tools/**"
+      - "CNAME"
       - ".github/workflows/copolitic-first-use-r0.yml"
   pull_request:
     paths:
       - "index.html"
       - "ai/index.json"
       - "llms.txt"
-      - "tests/test_copolitic_site_r0.py"
+      - "tests/**"
+      - "ai/sources.lock.json"
+      - "tools/**"
+      - "CNAME"
       - ".github/workflows/copolitic-first-use-r0.yml"
   workflow_dispatch:
 
@@ -32,4 +38,4 @@ jobs:
         with:
           python-version: "3.12"
       - name: Check 24 structural and negative policy cases
-        run: python -B -m unittest discover -s tests -p 'test_copolitic_site_r0.py' -v
+        run: python -B -m unittest discover -s tests -p 'test_copolitic_*.py' -v

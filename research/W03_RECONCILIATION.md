@@ -38,3 +38,10 @@ To unblock, one change outside W03 scope must do all of the following: add the l
 - **Provenance note:** an uncommitted working-tree change of unknown authorship (mtime 2026-11-18 12:57 −05:00) made the byte-identical fix before R1 began. It was saved as a patch, stashed and not committed. The R1 commit was produced independently by W03 after its own browser test showed the failure. Identical bytes are **duplicate content, not independent validation**.
 - **After the fix:** Chromium shows all labels visible, 0 px overflow at 320 px, 0 scripts and 0 external requests. Each page's home link was clicked and lands on `/`. Label contrast is 9.5:1 or better (WCAG AAA).
 - The PR #1 Chromium gate still passes on this branch, since `index.html` is unchanged.
+
+## R2 cycle (2026-11-20, same worker; not independent review)
+
+- Rebased onto `candidate/copolitic-contrast-stable-r0-20261120@6e7efc0726a940e44e8c2538bff23be765b382a7`, the newest tested descendant of PR #1 `218b43f`. The rebase was clean, and W03 still changes only `research/**` and `tests/test_w03_research.py`.
+- All gates on this head pass: 44 Python tests; the PR #1 Chromium first-use gate; the contrast canary (axe WCAG 2.1 A/AA, 0 violations, 0 incomplete); and the W03 browser falsifier.
+- **New:** an axe WCAG 2.1 A/AA audit of the three research pages at 390 and 1365 px, run with every `<details>` closed and again with all open. Result: 0 violations, 0 incomplete, 0 external requests, with 8–17 passing rules per page. This is local Chromium only; it is not human accessibility acceptance.
+- PR #2 (`review/copol-human-first-r0-20261117`, from `main`) adds its own "for journalists" research pointer on a separate line. It does not touch `research/**`, so nothing collides. Which front door to use is the owner's decision; W03 does not choose.

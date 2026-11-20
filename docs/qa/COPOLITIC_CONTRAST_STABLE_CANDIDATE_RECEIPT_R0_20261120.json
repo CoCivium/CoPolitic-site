@@ -1,0 +1,103 @@
+{
+  "schema": "CoPolitic.CoSites.FirstUseContrastRemediation.CandidateReceipt.R0",
+  "work_id": "CoPolitic:SourceFirstUse:BrandOrnamentContrast:20261120:R0",
+  "state": "PASS_SOURCE_CONTRAST_AND_SOURCE_MACHINE_PARITY_NOT_HOSTED",
+  "observed_date_utc": "2026-11-20",
+  "scope": "ISOLATED_GITHUB_SOURCE_CANDIDATE_ONLY",
+  "original": {
+    "branch": "candidate/copolitic-first-use-source-site-r0-20261110",
+    "commit": "218b43f773b5f02e63739a0438d88ff6890f6166",
+    "html_git_blob_sha1": "1ae823ad0072cb310c2f30f7cb464c05b375a43f",
+    "issue": "Decorative, aria-hidden brand link symbol generated inconclusive axe color-contrast at two viewports",
+    "affected_viewports": [
+      "390x844",
+      "1365x900"
+    ],
+    "confirmed_wcag_violations": 0,
+    "incomplete_contrast_elements_per_viewport": 1,
+    "baseline_ci": "https://github.com/CoCivium/CoPolitic-site/actions/runs/44649882022"
+  },
+  "remedy": {
+    "candidate_branch": "candidate/copolitic-contrast-stable-r0-20261120",
+    "source_ancestor_commit": "218b43f773b5f02e63739a0438d88ff6890f6166",
+    "change": "Removed unnecessary decorative brand symbol. Preserved wordmark, navigation and source text.",
+    "affected_source_paths": [
+      "index.html",
+      "ai/index.json",
+      "llms.txt",
+      "tests/test_copolitic_site_r0.py",
+      "tests/copolitic_contrast_canary_r0.cjs",
+      ".github/workflows/copolitic-contrast-canary-r0.yml"
+    ],
+    "patched_html_git_blob_sha1": "a6ef70f8bd8413175e0bf5af334ba2c725c6acbb",
+    "patched_html_sha256": "3a70e58a64d2c1d2fbad31f219c0988510784c695125db2d48a0c64cecfdc2f9",
+    "source_contract": "Machine discovery entry, light-model navigation and source integrity test updated to the identical patched HTML source blob",
+    "source_drift_gate": "Intermediate CI deliberately failed until exact manifest and test pin reconciled",
+    "no_original_branch_mutation": true
+  },
+  "verification": {
+    "CI_provider": "GitHub Actions",
+    "source_integrity_and_first_use": {
+      "run_id": 44650086978,
+      "run_url": "https://github.com/CoCivium/CoPolitic-site/actions/runs/44650086978",
+      "run_head": "cdf858d6f374568dbe82323816820d43ab875f72",
+      "result": "SUCCESS",
+      "incumbent_source_tests": 24,
+      "jobs": [
+        "static-human-machine-parity SUCCESS",
+        "browser-first-use SUCCESS"
+      ]
+    },
+    "contrast_browser": {
+      "run_id": 44650151182,
+      "run_url": "https://github.com/CoCivium/CoPolitic-site/actions/runs/44650151182",
+      "run_head": "f108f2eb55ff52b36b302f4e13602c3799bd740f",
+      "result": "SUCCESS",
+      "output_artifact_id": 14591300883,
+      "artifact_zip_sha256": "0a4041cf5cb6369303a6d434c20699ce027b15007fc2993a34be2d90c73f7774",
+      "inner_receipt_sha256": "5d2f513a230cda629c445c1cc008c643be2251a299dbb01787c761983470f05b",
+      "source_pinned_git_blob_sha1": "a6ef70f8bd8413175e0bf5af334ba2c725c6acbb",
+      "mobile_390x844": {
+        "violations": 0,
+        "inconclusive_contrast_elements": 0,
+        "other_incomplete_rules": 0,
+        "horizontal_overflow_px": 0,
+        "blocked_http_requests": 0,
+        "script_errors": 0,
+        "screenshot_sha256": "2cc5ba1922eb0040f6fe54726d8c2b3178e2680673f45fb8d83a319d6b8e13e2"
+      },
+      "desktop_1365x900": {
+        "violations": 0,
+        "inconclusive_contrast_elements": 0,
+        "other_incomplete_rules": 0,
+        "horizontal_overflow_px": 0,
+        "blocked_http_requests": 0,
+        "script_errors": 0,
+        "screenshot_sha256": "eaf77fca47f0a8455247d387d45fe91dfd39884452b4be8aa1a5c9bdeac1556b"
+      },
+      "screenshot_observation": "Both screenshots examined in model-side visual QA; no obvious clipping or missing header navigation",
+      "artifact_expiration_utc": "2026-12-04T00:59:56Z",
+      "witness_independence": "One GitHub CI trust root; separate workflows do not equal three independent roots"
+    }
+  },
+  "human_machine_parity": "SOURCE_BLOB_BOUND_ONLY_NOT_EXTERNAL_RECEIVER_ACCEPTANCE",
+  "live_site_hosting": "HOLD_DOMAIN_AND_PRIVACY_GATES",
+  "independent_human_a11y": "NOT_TESTED",
+  "release_authority": "NONE",
+  "original_pr_protected": true,
+  "x2_or_costead_runtime": "NO_RECEIVER_ACK",
+  "next_substantial_job": "Existing site owner to compare isolated candidate against original, arrange independent keyboard/screen-reader and hosted-preview verification, then elect approved source only with privacy, DNS/TLS and publication gates.",
+  "nonclaims": [
+    "LOCAL_IS_NOT_LANDED",
+    "VALIDATION_IS_NOT_ACCEPTANCE",
+    "NO_RECEIVER_PICKUP_WITHOUT_EXACT_READPROOF",
+    "NO_INTEGRATION_COEX_CANON_RUNTIME_OR_PUBLIC_INFERENCE",
+    "HASHING_IS_NOT_SEMANTIC_INGESTION",
+    "DISCOVERED_SET_IS_NOT_COMPLETE_HISTORY",
+    "GITHUB_CI_IS_NOT_HOSTED_RELEASE",
+    "AUTOMATED_AXE_SCAN_IS_NOT_HUMAN_ACCESSIBILITY_ACCEPTANCE",
+    "NO_THREE_INDEPENDENT_ROOTS",
+    "NO_X2_RUNTIME",
+    "NO_PHANTOM_ACK"
+  ]
+}

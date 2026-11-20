@@ -172,7 +172,7 @@ class SiteTests(unittest.TestCase):
         self.assertEqual(validate(self.m, self.h, self.l, self.sha)["result"], "PASS_STRUCTURE_ONLY")
 
     def test_02_human_source_exact_blob(self):
-        self.assertEqual(self.sha, "1ae823ad0072cb310c2f30f7cb464c05b375a43f")
+        self.assertEqual(self.sha, "a6ef70f8bd8413175e0bf5af334ba2c725c6acbb")
 
     def test_03_machine_and_human_have_same_civic_limits(self):
         self.assertIn("not a political party", self.h.lower())

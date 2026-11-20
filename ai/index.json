@@ -1,6 +1,6 @@
 {
   "schema": "CoCivium.CoSiteNode.DiscoveryR0",
-  "observed_at": "2026-11-10",
+  "observed_at": "2026-11-20",
   "node_id": "urn:cocivium:copolitic:public-source:site-r0",
   "state": "GITHUB_REVIEW_BRANCH__PUBLIC_SAFE_SOURCE__NOT_DEPLOYED__NO_EXTERNAL_RECEIVER_ACK",
   "identity": {
@@ -8,13 +8,13 @@
     "organization_relation": "CoCivium / CoAll (research ecosystem)",
     "role": "NONPARTISAN_CIVIC_EDUCATION_AND_GOVERNANCE_DESIGN",
     "repo": "CoCivium/CoPolitic-site",
-    "branch": "candidate/copolitic-first-use-source-site-r0-20261110",
+    "branch": "candidate/copolitic-contrast-stable-r0-20261120",
     "description": "Learn how public claims, evidence, rights and proposals can be tested and understood without hidden persuasion."
   },
   "doors": {
     "human": {
       "path": "index.html",
-      "source_url": "https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-first-use-source-site-r0-20261110/index.html",
+      "source_url": "https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-contrast-stable-r0-20261120/index.html",
       "availability": "GITHUB_SOURCE_ONLY__LIVE_SITE_NOT_PROVEN",
       "audiences": [
         "adults",
@@ -25,13 +25,13 @@
     },
     "machine": {
       "path": "ai/index.json",
-      "source_url": "https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-first-use-source-site-r0-20261110/ai/index.json",
+      "source_url": "https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-contrast-stable-r0-20261120/ai/index.json",
       "availability": "SOURCE_CANDIDATE__NO_MACHINE_PICKUP_PROOF",
       "purpose": "READ_ONLY_DISCOVERY_AND_TEST_CANDIDATES"
     },
     "plain_text": {
       "path": "llms.txt",
-      "source_url": "https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-first-use-source-site-r0-20261110/llms.txt",
+      "source_url": "https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-contrast-stable-r0-20261120/llms.txt",
       "availability": "OPTIONAL_NAVIGATION_AID_NOT_STANDARDIZED_INGESTION_GUARANTEE"
     }
   },
@@ -47,13 +47,13 @@
   "discovered_sources": [
     {
       "repo": "CoCivium/CoPolitic-site",
-      "rev": "candidate/copolitic-first-use-source-site-r0-20261110",
+      "rev": "candidate/copolitic-contrast-stable-r0-20261120",
       "path": "index.html",
-      "blob_sha1": "1ae823ad0072cb310c2f30f7cb464c05b375a43f",
+      "blob_sha1": "a6ef70f8bd8413175e0bf5af334ba2c725c6acbb",
       "label": "Human start",
       "type": "HTML_PAGE",
       "epistemic": "DESIGN_CANDIDATE",
-      "url": "https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-first-use-source-site-r0-20261110/index.html",
+      "url": "https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-contrast-stable-r0-20261120/index.html",
       "sha_algorithm": "git_blob_sha1",
       "source_verified_in_this_session": true,
       "hosted_service_status": "NOT_INFERRED_FROM_SOURCE"

@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - "index.html"
+      - "ai/index.json"
+      - "llms.txt"
+      - "tests/test_copolitic_site_r0.py"
       - "tests/copolitic_contrast_canary_r0.cjs"
       - ".github/workflows/copolitic-contrast-canary-r0.yml"
   workflow_dispatch:

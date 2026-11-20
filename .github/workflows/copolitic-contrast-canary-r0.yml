@@ -1,0 +1,51 @@
+name: CoPolitic source contrast diagnostic candidate R0
+# Source-only; no site publishing, secrets, live probing, or X2 agent.
+on:
+  push:
+    paths:
+      - "index.html"
+      - "tests/copolitic_contrast_canary_r0.cjs"
+      - ".github/workflows/copolitic-contrast-canary-r0.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-first-use-and-contrast:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout candidate with no persisted credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install Python source-test runner
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Reuse 24 existing source integrity tests
+        run: python -B -m unittest discover -s tests -p 'test_copolitic_site_r0.py' -v
+
+      - name: Install pinned Chromium scanner
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Redacted contrast/viewport source canary
+        run: |
+          set -euo pipefail
+          npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund playwright-core@1.56.0 axe-core@4.10.3
+          node --check tests/copolitic_contrast_canary_r0.cjs
+          node tests/copolitic_contrast_canary_r0.cjs
+
+      - name: Retain candidate evidence even on HOLD
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: copolitic-contrast-candidate-${{ github.run_id }}-a${{ github.run_attempt }}
+          path: out/copolitic-contrast-candidate-r0/
+          if-no-files-found: warn
+          retention-days: 14

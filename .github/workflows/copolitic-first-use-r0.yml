@@ -10,6 +10,8 @@ on:
       - "ai/index.json"
       - "llms.txt"
       - "tests/test_copolitic_site_r0.py"
+      - "tests/test_w03_research.py"
+      - "research/**"
       - "tests/copolitic_browser_first_use_r0.cjs"
       - ".github/workflows/copolitic-first-use-r0.yml"
   pull_request:
@@ -18,6 +20,8 @@ on:
       - "ai/index.json"
       - "llms.txt"
       - "tests/test_copolitic_site_r0.py"
+      - "tests/test_w03_research.py"
+      - "research/**"
       - "tests/copolitic_browser_first_use_r0.cjs"
       - ".github/workflows/copolitic-first-use-r0.yml"
   workflow_dispatch:
@@ -35,6 +39,8 @@ jobs:
           python-version: "3.12"
       - name: Check 24 structural and negative policy cases
         run: python -B -m unittest discover -s tests -p 'test_copolitic_site_r0.py' -v
+      - name: Check W03 research page gate
+        run: python -B -m unittest discover -s tests -p 'test_w03_research.py' -v
 
 
   browser-first-use:

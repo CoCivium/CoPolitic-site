@@ -137,6 +137,9 @@ def validate(m: dict, html: str, llms: str, html_sha: str) -> dict:
     for link in parser.links:
         if link.startswith("#") or link in ("ai/index.json", "llms.txt"):
             continue
+        if (link.startswith("research/") and not urlparse(link).scheme
+                and ".." not in link.split("/") and "//" not in link):
+            continue  # same-site research pages (W03); still no external scheme
         parsed = urlparse(link)
         need(parsed.scheme == "https" and parsed.hostname in allowed_github, "UNSAFE_EXTERNAL_LINK")
     expected_human = [
@@ -172,7 +175,7 @@ class SiteTests(unittest.TestCase):
         self.assertEqual(validate(self.m, self.h, self.l, self.sha)["result"], "PASS_STRUCTURE_ONLY")
 
     def test_02_human_source_exact_blob(self):
-        self.assertEqual(self.sha, "a6ef70f8bd8413175e0bf5af334ba2c725c6acbb")
+        self.assertEqual(self.sha, "dcf1ba9da9dcb5107458c1a2d66320fdd722614f")
 
     def test_03_machine_and_human_have_same_civic_limits(self):
         self.assertIn("not a political party", self.h.lower())
@@ -274,6 +277,13 @@ class SiteTests(unittest.TestCase):
     def test_24_reject_llms_indexing_guarantee(self):
         with self.assertRaisesRegex(Invalid,"LLMS_OVERCLAIM"):
             validate(self.m,self.h,self.l.replace("not a standardized guarantee", "a guaranteed channel"),self.sha)
+
+    def test_25_reject_research_path_escape(self):
+        with self.assertRaisesRegex(Invalid,"UNSAFE_EXTERNAL_LINK"):
+            validate(self.m,self.h.replace('href="research/reading-room/"','href="research/../../etc/"'),self.l,self.sha)
+
+    def test_26_research_link_present(self):
+        self.assertIn('href="research/reading-room/"', self.h)
 
 
 if __name__=="__main__":

@@ -4,8 +4,8 @@
 
 ## Smallest starting paths
 
-- Human-readable candidate front door: https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-first-use-source-site-r0-20261110/index.html
-- Machine-readable typed discovery: https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-first-use-source-site-r0-20261110/ai/index.json
+- Human-readable candidate front door: https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-contrast-stable-r0-20261120/index.html
+- Machine-readable typed discovery: https://github.com/CoCivium/CoPolitic-site/blob/candidate/copolitic-contrast-stable-r0-20261120/ai/index.json
 - Public project context: https://github.com/CoCivium/CoPolitic-site/blob/main/README.md
 - CoCivium public AI discovery policy: https://github.com/CoCivium/CoCivium/blob/main/docs/AI_DISCOVERY_POLICY.md
 - CoAll public machine bootstrap: https://github.com/CoCivium/CoCivium/blob/main/ai/index.json

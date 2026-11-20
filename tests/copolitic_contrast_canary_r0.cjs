@@ -8,7 +8,7 @@ const crypto = require("node:crypto");
 const {pathToFileURL} = require("node:url");
 const {execFileSync} = require("node:child_process");
 const {chromium} = require("playwright-core");
-const EXPECTED_SOURCE_BLOB = "1ae823ad0072cb310c2f30f7cb464c05b375a43f";
+const EXPECTED_SOURCE_BLOB = "a6ef70f8bd8413175e0bf5af334ba2c725c6acbb";
 const AUDIT_TAGS = ["wcag2a","wcag2aa","wcag21a","wcag21aa"];
 const OUT = path.resolve("out/copolitic-contrast-candidate-r0");
 const hex = buf => crypto.createHash("sha256").update(buf).digest("hex");

@@ -1,0 +1,20 @@
+{
+  "schema": "CoAll.CoSites.PublicFaceInformation.R0",
+  "site": "CoPolitic",
+  "canonical_url": "https://copolitic.org/",
+  "public_state": "RESEARCH_PRELAUNCH",
+  "audience": "General readers and researchers",
+  "human_purpose": "Explore public fears, competing explanations, evidence limits and responsible choices",
+  "automatic_decisions_or_policy_service": "NOT_OPERATING",
+  "live_ai_or_ia_service": "NONE",
+  "paid_affiliate_relationships": "NONE_ASSERTED",
+  "research_source_url": "https://github.com/CoCivium/CoPolitic-site/pull/2",
+  "source_editorial_state": "DRAFT_REVIEW_NOT_FINAL",
+  "cognizance_or_sentience": "NOT_ESTABLISHED",
+  "information_quality": "HYPOTHESES_UNLESS_SEPARATELY_SOURCED",
+  "no_personal_data_collection": true,
+  "no_third_party_assets": true,
+  "revision_date": "2026-11-21",
+  "recovery_principle": "Source HTML, source hashes, rollback and host binding separately verified; do not infer this record proves deployment",
+  "operator_contact": "https://github.com/CoCivium/CoPolitic-site"
+}

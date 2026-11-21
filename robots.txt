@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://copolitic.org/sitemap.xml

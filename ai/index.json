@@ -1,0 +1,13 @@
+{
+  "description": "Read-only navigation intended to help agents and humans inspect a public research prelaunch",
+  "human_home_url": "https://cocivium.github.io/CoPolitic-site/",
+  "ia_glossary_url": "https://cocivium.github.io/CoPolitic-site/ai/terms/ia.json",
+  "manifest_url": "https://cocivium.github.io/CoPolitic-site/ai/site-manifest.json",
+  "no_auth_or_permissions": true,
+  "schema": "CoAll.CoSites.PublicMachineNavigation.R0",
+  "site_id": "copolitic-public-research-prelaunch",
+  "source_policy_url": "https://github.com/CoCivium/CoCivium/blob/090c532627cd014e6c41355ddd70b90a56cc03ff/docs/AI_DISCOVERY_POLICY.md",
+  "status": "NAVIGATION_ONLY_NOT_AGENT_SERVICE",
+  "term_explanation_url": "https://cocivium.github.io/CoPolitic-site/ia.html",
+  "version": "r0"
+}

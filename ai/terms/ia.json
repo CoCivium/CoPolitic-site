@@ -1,0 +1,29 @@
+{
+  "accepted_global_expansion": null,
+  "authority": "NONE_GRANTED_BY_THIS_PAGE",
+  "human_explanation_url": "https://cocivium.github.io/CoPolitic-site/ia.html",
+  "illustrative_interpretations_only": [
+    "Independent Agent",
+    "Intelligent Agent",
+    "Intelligence Augmentation"
+  ],
+  "not_by_itself": [
+    "authorized_actor",
+    "verified_external_receiver",
+    "independent_failure_domain",
+    "sentience_evidence",
+    "AI_welfare_decision",
+    "legal_personhood",
+    "automated_publishing_service"
+  ],
+  "plain_language": "A provisional CoAll shorthand for considering some kinds of intelligence or agency participation, whose precise expansion and powers have not yet been agreed.",
+  "review": "REQUIRES_TYPED_AUTHORIZED_DEFINITION_BEFORE_ASSIGNED_RUNTIME_ROLE",
+  "schema": "CoAll.CoSites.PublicIATerm.R0",
+  "source_edition": {
+    "git_blob_sha1": "f944fbe817e4abc218d94a57366a03a8d8b4c3f0",
+    "meaning": "Explicitly unresolved in publicly available CoAll onramp",
+    "url": "https://github.com/CoCivium/CoCivium/blob/090c532627cd014e6c41355ddd70b90a56cc03ff/ai/onramp/ai-ia-evergreen-r0.json"
+  },
+  "status": "UNRESOLVED_SCOPE_BOUND_TERM",
+  "term": "IA"
+}

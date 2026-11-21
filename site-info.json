@@ -1,7 +1,7 @@
 {
   "schema": "CoAll.CoSites.PublicFaceInformation.R0",
   "site": "CoPolitic",
-  "canonical_url": "https://copolitic.org/",
+  "canonical_url": "https://cocivium.github.io/CoPolitic-site/",
   "public_state": "RESEARCH_PRELAUNCH",
   "audience": "General readers and researchers",
   "human_purpose": "Explore public fears, competing explanations, evidence limits and responsible choices",
@@ -16,5 +16,9 @@
   "no_third_party_assets": true,
   "revision_date": "2026-11-21",
   "recovery_principle": "Source HTML, source hashes, rollback and host binding separately verified; do not infer this record proves deployment",
-  "operator_contact": "https://github.com/CoCivium/CoPolitic-site"
+  "operator_contact": "https://github.com/CoCivium/CoPolitic-site",
+  "intended_future_domain": "https://copolitic.org/",
+  "intended_future_domain_status": "NOT_BOUND_OR_VERIFIED_CURRENTLY",
+  "publication_surface": "GITHUB_PAGES_PUBLIC_FALLBACK",
+  "source_provenance": "CoCivium/CoPolitic-site clean allowlist release branch, exact-source-pinned"
 }

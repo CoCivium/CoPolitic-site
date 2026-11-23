@@ -9,5 +9,25 @@
   "source_policy_url": "https://github.com/CoCivium/CoCivium/blob/090c532627cd014e6c41355ddd70b90a56cc03ff/docs/AI_DISCOVERY_POLICY.md",
   "status": "NAVIGATION_ONLY_NOT_AGENT_SERVICE",
   "term_explanation_url": "https://cocivium.github.io/CoPolitic-site/ia.html",
-  "version": "r0"
+  "version": "r0",
+  "press_context_url": "https://cocivium.github.io/CoPolitic-site/press.html",
+  "press_context_classification": "SOURCE_LINKED_PUBLIC_JOURNALIST_GUIDE_NOT_ENDORSEMENT",
+  "discoverable_related_sources": [
+    {
+      "role": "SEPARATE_CONSULTANCY",
+      "url": "https://inseed.com/"
+    },
+    {
+      "role": "PERSONAL_WRITING_NOT_CIVIC_EVIDENCE",
+      "url": "https://rickpublic.substack.com/"
+    },
+    {
+      "role": "PUBLIC_PERSON_PROFILE",
+      "url": "https://www.linkedin.com/in/richardballard/"
+    },
+    {
+      "role": "RELATED_PUBLIC_EDUCATION",
+      "url": "https://cocivium.github.io/CoAcademy/civic-integrity/"
+    }
+  ]
 }

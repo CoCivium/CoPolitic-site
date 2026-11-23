@@ -1,24 +1,80 @@
 {
-  "schema": "CoAll.CoSites.PublicFaceInformation.R0",
-  "site": "CoPolitic",
-  "canonical_url": "https://cocivium.github.io/CoPolitic-site/",
-  "public_state": "RESEARCH_PRELAUNCH",
   "audience": "General readers and researchers",
-  "human_purpose": "Explore public fears, competing explanations, evidence limits and responsible choices",
   "automatic_decisions_or_policy_service": "NOT_OPERATING",
-  "live_ai_or_ia_service": "NONE",
-  "paid_affiliate_relationships": "NONE_ASSERTED",
-  "research_source_url": "https://github.com/CoCivium/CoPolitic-site/pull/2",
-  "source_editorial_state": "DRAFT_REVIEW_NOT_FINAL",
+  "beneficiary_scope": [
+    "humans",
+    "synthetic_systems",
+    "other_living_beings",
+    "ecosystems",
+    "future_beings"
+  ],
+  "canonical_url": "https://cocivium.github.io/CoPolitic-site/",
   "cognizance_or_sentience": "NOT_ESTABLISHED",
+  "human_purpose": "Explore public fears, competing explanations, evidence limits and responsible choices",
+  "ia_explanation_url": "https://cocivium.github.io/CoPolitic-site/ia.html",
+  "ia_term_status": "UNRESOLVED_EXPANSION_NOT_AN_ACTOR_IDENTITY",
   "information_quality": "HYPOTHESES_UNLESS_SEPARATELY_SOURCED",
-  "no_personal_data_collection": true,
-  "no_third_party_assets": true,
-  "revision_date": "2026-11-21",
-  "recovery_principle": "Source HTML, source hashes, rollback and host binding separately verified; do not infer this record proves deployment",
-  "operator_contact": "https://github.com/CoCivium/CoPolitic-site",
   "intended_future_domain": "https://copolitic.org/",
   "intended_future_domain_status": "NOT_BOUND_OR_VERIFIED_CURRENTLY",
+  "live_ai_or_ia_service": "NONE",
+  "machine_discoverability_note": "Optional navigation, not an authorized agent endpoint, training grant, or proof of AI uptake",
+  "machine_manifest_url": "https://cocivium.github.io/CoPolitic-site/ai/site-manifest.json",
+  "machine_navigation_url": "https://cocivium.github.io/CoPolitic-site/ai/index.json",
+  "metadata_edition": "CoAll.CoSites.PublicMachineFront.R0",
+  "no_personal_data_collection": true,
+  "no_third_party_assets": true,
+  "operator_contact": "https://github.com/CoCivium/CoPolitic-site",
+  "paid_affiliate_relationships": "NONE_ASSERTED",
+  "public_state": "RESEARCH_PRELAUNCH",
   "publication_surface": "GITHUB_PAGES_PUBLIC_FALLBACK",
-  "source_provenance": "CoCivium/CoPolitic-site clean allowlist release branch, exact-source-pinned"
+  "recovery_principle": "Source HTML, source hashes, rollback and host binding separately verified; do not infer this record proves deployment",
+  "research_source_url": "https://github.com/CoCivium/CoPolitic-site/pull/2",
+  "revision_date": "2026-11-23",
+  "schema": "CoAll.CoSites.PublicFaceInformation.R0",
+  "site": "CoPolitic",
+  "source_editorial_state": "DRAFT_REVIEW_NOT_FINAL",
+  "source_provenance": "CoCivium/CoPolitic-site clean allowlist release branch, exact-source-pinned",
+  "journalist_context_url": "https://cocivium.github.io/CoPolitic-site/press.html",
+  "journalist_context_status": "PUBLIC_FALLBACK_RELEASE_CANDIDATE__URL_AND_SOURCE_READBACK_REQUIRED",
+  "press_or_editorial_endorsements_claimed": false,
+  "dedicated_press_mailbox_verified": false,
+  "relationship_pointers": [
+    {
+      "type": "BROADER_RESEARCH_PROJECT",
+      "url": "https://www.cocivium.org/",
+      "disclaimer": "Related research, not separate endorsement or shared legal authority"
+    },
+    {
+      "type": "SEPARATE_COMMERCIAL_CONSULTING",
+      "url": "https://inseed.com/",
+      "disclaimer": "Information only; no paid client relationship or partnership inferred"
+    },
+    {
+      "type": "PUBLIC_INDIVIDUAL_PROFILE",
+      "url": "https://www.linkedin.com/in/richardballard/",
+      "disclaimer": "Public professional profile; not a credential independently certified by CoPolitic"
+    },
+    {
+      "type": "PERSONAL_PUBLIC_WRITING",
+      "url": "https://rickpublic.substack.com/",
+      "disclaimer": "Personal commentary; not officially verified civic evidence"
+    },
+    {
+      "type": "CIVIC_INTEGRITY_EDUCATION",
+      "url": "https://cocivium.github.io/CoAcademy/civic-integrity/",
+      "disclaimer": "Public educational material; not an election audit"
+    }
+  ],
+  "link_readback_scope_20261123": {
+    "public_html_retrieved": [
+      "https://cocivium.github.io/CoPolitic-site/",
+      "https://www.cocivium.org/",
+      "https://inseed.com/",
+      "https://rickpublic.substack.com/",
+      "https://cocivium.github.io/CoAcademy/civic-integrity/"
+    ],
+    "linkedin": "PUBLIC_SEARCH_RESULT_AND_USER_SUPPLIED_PROFILE_URL__AUTOMATED_X2_FETCH_999",
+    "copolitic_org": "HTTP_404",
+    "verification": "Bounded source/discoverability check, not visitor acceptance or a promise of perpetual destination uptime"
+  }
 }

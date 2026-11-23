@@ -14,24 +14,30 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--p);color:var(--ink);f
 a{color:inherit;text-underline-offset:4px}a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:3px}
 .skip{position:absolute;left:7px;top:-120px;background:white;padding:10px}.skip:focus{top:8px}
 .ribbon{padding:9px 16px;text-align:center;background:#203542;color:#fff;font-weight:800;letter-spacing:.04em;font-size:12px}
-.top{max-width:1120px;margin:auto;padding:22px 25px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.top{max-width:1200px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;font:700 25px Georgia,serif}
 .logo img{width:44px;height:44px;object-fit:contain;background:#fff;border-radius:9px;border:1px solid var(--line)}
 nav{display:flex;gap:19px;flex-wrap:wrap;font-size:14px;font-weight:750}nav a{text-decoration:none}nav a:hover{text-decoration:underline}
-.wrap{max-width:1120px;margin:auto;padding-left:25px;padding-right:25px}
-.hero{padding-top:70px;padding-bottom:85px;border-bottom:1px solid var(--line)}.eyebrow{text-transform:uppercase;letter-spacing:.13em;color:var(--red);font-size:12px;font-weight:850}
-h1{font:normal clamp(3rem,7vw,5.7rem)/1.01 Georgia,serif;letter-spacing:-.047em;max-width:980px;margin:14px 0 26px}
-h2{font:normal clamp(2rem,4vw,3.3rem)/1.16 Georgia,serif;letter-spacing:-.035em;margin:8px 0 18px}
+.wrap{max-width:1200px;margin:auto;padding-left:22px;padding-right:22px}
+.hero{padding-top:28px;padding-bottom:42px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(295px,.72fr);gap:32px;align-items:start}
+.hero-copy h1{max-width:740px}.at-a-glance{background:#fffdfa;border:1px solid var(--line);border-top:5px solid var(--red);padding:22px;margin-top:12px}
+.at-a-glance h2{font:normal 1.65rem/1.2 Georgia,serif;letter-spacing:-.02em;margin:7px 0 15px}
+.at-a-glance dl{margin:0}.at-a-glance div{border-top:1px solid var(--line);padding:11px 0}
+.at-a-glance dt{font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:#85513e}
+.at-a-glance dd{margin:3px 0;font-size:14px;line-height:1.5;color:#3b5361}.eyebrow{text-transform:uppercase;letter-spacing:.13em;color:var(--red);font-size:12px;font-weight:850}
+h1{font:normal clamp(2.8rem,5.2vw,4.6rem)/1.05 Georgia,serif;letter-spacing:-.043em;max-width:850px;margin:10px 0 18px}
+h2{font:normal clamp(1.9rem,3.3vw,2.8rem)/1.16 Georgia,serif;letter-spacing:-.03em;margin:7px 0 15px}
 h3{font:normal 1.7rem/1.2 Georgia,serif;margin:10px 0}
-.lead{font-size:clamp(1.16rem,2vw,1.45rem);max-width:780px}.sub{color:#465e6b}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-block;padding:12px 19px;border-radius:50px;border:1px solid #203542;text-decoration:none;font-weight:760;font-size:15px}.btn.primary{background:#203542;color:#fff}
-section.block{padding-top:60px;padding-bottom:65px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
-.card{background:#fffdfa;border:1px solid var(--line);border-top:5px solid var(--red);padding:24px;min-height:258px}.card p{color:#455b65}
-.ink{background:#203542;color:#fff;padding:74px 0 79px}.ink .eyebrow{color:#f0b29f}.ink p{max-width:830px;font-size:1.2rem;color:#e0e9e9}
+.lead{font-size:clamp(1.13rem,1.6vw,1.28rem);max-width:730px}.sub{color:#465e6b}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.btn{display:inline-block;padding:12px 19px;border-radius:50px;border:1px solid #203542;text-decoration:none;font-weight:760;font-size:15px}.btn.primary{background:#203542;color:#fff}
+section.block{padding-top:35px;padding-bottom:42px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:20px}
+.card{background:#fffdfa;border:1px solid var(--line);border-top:5px solid var(--red);padding:20px;min-height:0}.card p{color:#455b65}
+.ink{background:#203542;color:#fff;padding:42px 0 48px}.ink .eyebrow{color:#f0b29f}.ink p{max-width:830px;font-size:1.2rem;color:#e0e9e9}
 .two{display:grid;grid-template-columns:repeat(2,1fr);gap:38px}.two article{border-top:1px solid var(--line);padding-top:23px}
 details.proof{max-width:840px;border-top:1px solid var(--line);padding:16px 0}details.proof summary{cursor:pointer;font-weight:800}
-.ending{background:var(--soft);padding:45px 0}.small,footer{font-size:13px;color:#485965}
-footer{max-width:1120px;margin:auto;padding:23px 25px 120px}
+.ending{background:var(--soft);padding:30px 0}.small,footer{font-size:13px;color:#485965}
+footer{max-width:1200px;margin:auto;padding:22px 22px 82px}
 .bar{position:fixed;bottom:14px;right:max(12px,calc((100vw - 1120px)/2));width:min(340px,calc(100vw - 24px));z-index:10}
 .bar summary{display:block;cursor:pointer;list-style:none;background:var(--red);color:#fff;border:2px solid #fff;border-radius:999px;padding:12px 19px;width:max-content;max-width:100%;margin-left:auto;font-weight:800;box-shadow:0 5px 19px #10283755}
 .bar summary::-webkit-details-marker{display:none}.bar summary::before{content:'+';margin-right:9px}.bar[open] summary::before{content:'−'}
@@ -39,7 +45,7 @@ footer{max-width:1120px;margin:auto;padding:23px 25px 120px}
 .bar .panel{background:#fff;border:1px solid var(--line);padding:19px;border-radius:16px;box-shadow:0 6px 23px #132a3652;margin-bottom:10px;max-height:65vh;overflow:auto}
 .bar .panel a{display:block;padding:11px 0;border-top:1px solid var(--line);text-decoration:none;font-weight:750}.bar .panel a:hover{text-decoration:underline}
 .bar .panel p{font-size:13px;color:#455b65}
-@media(max-width:750px){.top,.wrap{padding-left:18px;padding-right:18px}.hero{padding-top:33px;padding-bottom:55px}.cards,.two{grid-template-columns:1fr}.card{min-height:0}section.block{padding-top:42px;padding-bottom:42px}nav{justify-content:flex-start}.bar{right:10px;bottom:10px;width:min(305px,calc(100vw - 20px))}.bar .panel{max-height:54vh}}
+@media(max-width:750px){.top,.wrap{padding-left:16px;padding-right:16px}.hero{padding-top:22px;padding-bottom:32px}.hero-grid,.cards,.two{grid-template-columns:1fr}.hero-grid{gap:15px}.at-a-glance{margin-top:0;padding:16px}.card{min-height:0}section.block{padding-top:28px;padding-bottom:32px}nav{justify-content:flex-start}.bar{right:10px;bottom:10px;width:min(305px,calc(100vw - 20px))}.bar .panel{max-height:54vh}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.ribbon,.bar,.actions,nav{display:none!important}.ink{background:none;color:#111;padding:20px 0}.ink p{color:#111}.cards{grid-template-columns:repeat(3,1fr)}}
 </style></head>
@@ -48,11 +54,20 @@ footer{max-width:1120px;margin:auto;padding:23px 25px 120px}
 <header class="top"><a class="logo" href="#main"><img src="assets/brand/copolitic_logo.svg" width="44" height="44" alt=""><span>CoPolitic</span></a>
 <nav aria-label="Main navigation"><a href="#questions">The questions</a><a href="#thesis">The idea</a><a href="#sources">Evidence and limits</a><a href="press.html">For journalists</a></nav></header>
 <main id="main">
-<section class="hero wrap"><p class="eyebrow">Public fears · Open questions · Better choices</p>
+<section class="hero wrap"><div class="hero-grid"><div class="hero-copy">
+<p class="eyebrow">Public fears · Open questions · Better choices</p>
 <h1>When everything feels connected, how do we know what really is?</h1>
 <p class="lead">Outages. Conflicting headlines. Powerful new AI. The worries are understandable. The explanations are not always settled. CoPolitic explores how to tell the difference and what might actually help.</p>
-<div class="actions"><a class="btn primary" href="#questions">Explore the questions</a><a class="btn" href="#thesis">The idea tying them together</a></div>
-<p class="small">An introduction to research in progress, not a source of breaking alerts or verified incident attribution.</p></section>
+<div class="actions"><a class="btn primary" href="#questions">Explore the questions</a><a class="btn" href="press.html">For journalists and researchers</a></div>
+<p class="small">Research in progress, not breaking alerts or verified incident attribution.</p>
+</div><aside class="at-a-glance" aria-label="Research status at a glance">
+<p class="eyebrow">Source at a glance</p><h2>A research notebook, open to challenge.</h2>
+<dl>
+<div><dt>What you can read</dt><dd>Evidence-first civic questions, a public source trail, and provisional AI/IA explanations.</dd></div>
+<div><dt>What is not verified</dt><dd>Incident attribution, mature services, independent adoption, or a working branded domain.</dd></div>
+<div><dt>Who and where</dt><dd><a href="press.html">Project relationships, public writing, Rick's profile and InSeed</a> are explained separately.</dd></div>
+<div><dt>How to scrutinize it</dt><dd><a href="https://github.com/CoCivium/CoPolitic-site" rel="noreferrer">Read the source history</a> and <a href="https://github.com/CoCivium/CoPolitic-site/issues" rel="noreferrer">raise a correction</a>.</dd></div>
+</dl></aside></div></section>
 <section class="block wrap" id="questions"><p class="eyebrow">Three questions to start with</p>
 <h2>Fear can start the conversation. It shouldn't finish it.</h2>
 <p class="sub">There is room for a good story without pretending we already know the ending.</p>

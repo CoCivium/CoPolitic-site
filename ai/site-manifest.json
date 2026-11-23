@@ -131,7 +131,7 @@
       "independent_reader_counterexample"
     ],
     "latest_journalist_source_review": "2026-11-23",
-    "deployed_source_update": "NOT_YET_RELEASED_THIS_CANDIDATE"
+    "deployed_source_update": "SOURCE_NE_INDEPENDENT_PUBLIC_URL_READBACK"
   },
   "human_explanation_urls": [
     "https://cocivium.github.io/CoPolitic-site/",
@@ -182,7 +182,7 @@
     "predecessor_role": "BEFORE_THIS_MACHINE_MANIFEST_UPDATE",
     "predecessor_verified_commit": "f0feaddb3ac5c67a81c35771540f3f03100c052d",
     "repository": "CoCivium/CoPolitic-site",
-    "site_info_sha256": "e5517a62960094f1139ef3d40da04f419a99aaacda9fc08dedd031e28d8df46d",
+    "site_info_sha256": "34d58075e4657d83565a793723523f42a77b218787bcf9b704b7cab41b642d79",
     "verification_scope": "EXACT_SOURCE_BYTES_NOT_INDEPENDENT_TRUTH_OR_VALID_LICENSE",
     "press_guide_sha256": "e1c0fd2eef889952af8724d91af5f7d6f26a76ddbc3e93d69ba2a46c61ab81b6",
     "home_git_blob_sha1": "6ed84daac0c43d9edadd57596247a5494e4f6aba",
@@ -192,7 +192,8 @@
       "checks": "30_OF_30_PASS_DESKTOP_AND_MOBILE__SYNTHETIC_BROWSER",
       "limitations": "NOT_INDEPENDENT_HUMAN_QA_NOT_PUBLIC_DEPLOYMENT",
       "rejected_prior_qa_sha256": "7c980ae0936af3d9a3682dd62cc36dacf511e6a73bc3afc01aa269928c7f0119"
-    }
+    },
+    "site_info_git_blob_sha1": "a370a66494ea60639e9179920413b0ef9abef3ae"
   },
   "term_records": [
     {

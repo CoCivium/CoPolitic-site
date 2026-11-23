@@ -35,7 +35,7 @@
   "source_editorial_state": "DRAFT_REVIEW_NOT_FINAL",
   "source_provenance": "CoCivium/CoPolitic-site clean allowlist release branch, exact-source-pinned",
   "journalist_context_url": "https://cocivium.github.io/CoPolitic-site/press.html",
-  "journalist_context_status": "SOURCE_ONLY_DRAFT__NOT_SERVED_UNTIL_RELEASE",
+  "journalist_context_status": "PUBLIC_FALLBACK_RELEASE_CANDIDATE__URL_AND_SOURCE_READBACK_REQUIRED",
   "press_or_editorial_endorsements_claimed": false,
   "dedicated_press_mailbox_verified": false,
   "relationship_pointers": [

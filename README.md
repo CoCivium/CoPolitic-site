@@ -1,7 +1,15 @@
 # CoPolitic | Public-policy research pointer
 
-**Status, October 24, 2026: public GitHub source pointer only.**
-This repository is a policy/governance-facing placeholder. A connected web domain or active publication under copolitic.org or copolitic.com is **not verified**. Its old state was a single-line scaffold; this README is an informational pointer, not a deployed website.
+**Currentness, November 23, 2026:** CoPolitic has a working [GitHub Pages research-prelaunch fallback](https://cocivium.github.io/CoPolitic-site/), but **copolitic.org still returns GitHub Pages 404**; it is not a mature operational policy service. The source-pinned journalist guide and updated homepage are committed to the existing [Pages source branch](https://github.com/CoCivium/CoPolitic-site/tree/cosites/copolitic-minimal-public-20261121), while deployment must be checked separately against the live URL. Source commit or a build queued is not proof that a visitor sees it.
+
+## For journalists and readers checking who is involved
+
+- [CoPolitic press/source guide (public GitHub source)](https://github.com/CoCivium/CoPolitic-site/blob/cosites/copolitic-minimal-public-20261121/press.html) explains the project, its limitations, and how the sites and people relate. When deployed, its intended public route is [the GitHub Pages press guide](https://cocivium.github.io/CoPolitic-site/press.html).
+- [CoCivium](https://www.cocivium.org/) is the related public research project. [InSeed](https://inseed.com/) is a **separate commercial consulting front**, not an independent endorsement or proven CoPolitic customer.
+- [Rick Ballard's public LinkedIn profile](https://www.linkedin.com/in/richardballard/) and [RickPublic personal essays](https://rickpublic.substack.com/) provide individual professional and opinion context, **not independently verified CoPolitic evidence** or official statements by any political body.
+- [CoPolitic source history](https://github.com/CoCivium/CoPolitic-site) and [public issues](https://github.com/CoCivium/CoPolitic-site/issues) offer read-only inspection and voluntary correction routes. Never post private correspondence, personal data or credentials.
+
+The page uses a historical CoPolitic logo already present in source; no claim that it is the most recently approved brand mark. No joint legal entity, paid client, endorsement, press accreditation, voting guidance, autonomous policy service or independent reader acceptance is inferred from these links.
 
 ## Start with existing public evidence
 

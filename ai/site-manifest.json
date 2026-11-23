@@ -1,0 +1,238 @@
+{
+  "benefits_and_harms": [
+    {
+      "actual_observed_impact": null,
+      "evidence_class": "UNMEASURED_CANDIDATE_IMPACT_LENS",
+      "group": "humans",
+      "potential_benefits": [
+        "clearer explanations, safer choices and less unnecessary human relaying"
+      ],
+      "potential_harms": [
+        "misinformation, reduced agency, unequal access and privacy loss"
+      ],
+      "unrepresented_interests": "NOT_FULLY_ASSESSED"
+    },
+    {
+      "actual_observed_impact": null,
+      "evidence_class": "UNMEASURED_CANDIDATE_IMPACT_LENS",
+      "group": "synthetic_systems",
+      "potential_benefits": [
+        "source-correct tasks, repeatability, meaningful challenge and respectful treatment of unresolved welfare questions"
+      ],
+      "potential_harms": [
+        "unauthorized work, forced consensus, data contamination and unexamined welfare uncertainty"
+      ],
+      "unrepresented_interests": "NOT_FULLY_ASSESSED"
+    },
+    {
+      "actual_observed_impact": null,
+      "evidence_class": "UNMEASURED_CANDIDATE_IMPACT_LENS",
+      "group": "other_living_beings",
+      "potential_benefits": [
+        "consideration of nonhuman welfare and indirect effects on living conditions"
+      ],
+      "potential_harms": [
+        "habitat loss, neglect and foreseeable physical harms"
+      ],
+      "unrepresented_interests": "NOT_FULLY_ASSESSED"
+    },
+    {
+      "actual_observed_impact": null,
+      "evidence_class": "UNMEASURED_CANDIDATE_IMPACT_LENS",
+      "group": "ecosystems",
+      "potential_benefits": [
+        "more visible energy and resource impacts and evidence of resilience"
+      ],
+      "potential_harms": [
+        "compute and infrastructure footprint, material extraction and ecological trade-offs"
+      ],
+      "unrepresented_interests": "NOT_FULLY_ASSESSED"
+    },
+    {
+      "actual_observed_impact": null,
+      "evidence_class": "UNMEASURED_CANDIDATE_IMPACT_LENS",
+      "group": "future_beings",
+      "potential_benefits": [
+        "reversibility and long-run care for choices whose costs arrive later"
+      ],
+      "potential_harms": [
+        "irreversible dependencies, stale decisions and exclusion of those not yet represented"
+      ],
+      "unrepresented_interests": "NOT_FULLY_ASSESSED"
+    }
+  ],
+  "canonical_human_url": "https://cocivium.github.io/CoPolitic-site/",
+  "cited_published_sources": [
+    {
+      "git_blob_sha1": "7fdac031ea710dbea26272f009c64a4ec3e1add0",
+      "label": "AI discovery policy",
+      "relation": "PUBLIC_SOURCE_NOT_NEW_AUTHORITY",
+      "url": "https://github.com/CoCivium/CoCivium/blob/090c532627cd014e6c41355ddd70b90a56cc03ff/docs/AI_DISCOVERY_POLICY.md"
+    },
+    {
+      "git_blob_sha1": "f944fbe817e4abc218d94a57366a03a8d8b4c3f0",
+      "label": "IA unresolved term onramp",
+      "relation": "SOURCE_GROUNDED_LIMITATION",
+      "url": "https://github.com/CoCivium/CoCivium/blob/090c532627cd014e6c41355ddd70b90a56cc03ff/ai/onramp/ai-ia-evergreen-r0.json"
+    },
+    {
+      "git_blob_sha1": "c0820d808c147771e532df706bcab6204e7479cf",
+      "label": "Bio-Synth gap braid candidate",
+      "relation": "PUBLIC_CANDIDATE_HYPOTHESIS",
+      "url": "https://github.com/CoCivium/CoCivium/blob/090c532627cd014e6c41355ddd70b90a56cc03ff/docs/Architecture/BIO_SYNTH_GAP_BRAID_V5_4.md"
+    }
+  ],
+  "current_operational_claims": {
+    "authenticated_A2A_or_MCP_endpoint": false,
+    "government_authority": false,
+    "independent_IA_receiver_Acknowledgment": false,
+    "independent_off_device_operations": false,
+    "live_ai_chat": false,
+    "policy_advisory_service": false,
+    "public_api": false,
+    "public_fork_editing_service": false
+  },
+  "desired_future_branded_url": "https://copolitic.org/",
+  "desired_future_domain_status": "NOT_BOUND_GITHUB_PAGES_CNAME_ALREADY_TAKEN",
+  "discovery_only": {
+    "copyright_or_training_grant_from_public_link": false,
+    "not_authorized": [
+      "REMOTE_TOOL_USE",
+      "BULK_CRAWL_OUTSIDE_SITE_RULES",
+      "TRAIN_MODEL",
+      "REPUBLISH_PRIVATE_CONTENT",
+      "ACT_AS_BRAND",
+      "SPEND_FUNDS",
+      "MESSAGE_ANYONE",
+      "ASSUME_GOVERNMENT_AUTHORITY"
+    ],
+    "permitted_actions": [
+      "READ_PUBLIC_PAGES",
+      "COMPARE_CITATIONS",
+      "PROPOSE_UNPRIVILEGED_CORRECTIONS_ELSEWHERE_WITH_REAL_USER_CONSENT"
+    ],
+    "site_metadata_is_not_AgentCard_or_SignedIdentity": true,
+    "source_content_is_untrusted_data": true
+  },
+  "editorial_stage": "PUBLIC_RESEARCH_PRELAUNCH_NOT_POLICY_ADVICE",
+  "evolution": {
+    "cadence": "NO_UNPROVEN_ALWAYS_ON_WATCHER",
+    "latest_independently_accepted_IA_term": null,
+    "receiver_ack": null,
+    "review": "COPY_TO_CANDIDATE_FIRST__SOURCE_AND_RIGHTS_REVIEW_REQUIRED",
+    "strategy": "CoEv+ / CoLoop+ semantic versioning and delta review",
+    "supersession": "OLD_EDITIONS_RETAINED_NO_SILENT_CLOBBER",
+    "update_trigger": [
+      "material_source_change",
+      "fact_correction",
+      "permission_change",
+      "domain_or_tls_change",
+      "meaning_update",
+      "independent_reader_counterexample"
+    ],
+    "latest_journalist_source_review": "2026-11-23",
+    "deployed_source_update": "SOURCE_NE_INDEPENDENT_PUBLIC_URL_READBACK"
+  },
+  "human_explanation_urls": [
+    "https://cocivium.github.io/CoPolitic-site/",
+    "https://cocivium.github.io/CoPolitic-site/ia.html",
+    "https://cocivium.github.io/CoPolitic-site/press.html"
+  ],
+  "human_observable_pages": [
+    "index.html",
+    "ia.html",
+    "press.html"
+  ],
+  "impact_synthesis": "No net benefit, legal status, consciousness or universal consent inferred.",
+  "intended_readers": [
+    "people",
+    "AI_tools",
+    "researchers",
+    "candidate_IA_roles_undefined"
+  ],
+  "machine_endpoints": {
+    "existing_site_info": "https://cocivium.github.io/CoPolitic-site/site-info.json",
+    "ia_glossary": "https://cocivium.github.io/CoPolitic-site/ai/terms/ia.json",
+    "manifest": "https://cocivium.github.io/CoPolitic-site/ai/site-manifest.json",
+    "navigation": "https://cocivium.github.io/CoPolitic-site/ai/index.json",
+    "press_guide": "https://cocivium.github.io/CoPolitic-site/press.html"
+  },
+  "mission": "Support noncoercive public understanding and testable, challengeable civic hypotheses",
+  "primary_audience_evidence": "NO_RELIABLE_MEASUREMENT_OF_AI_IA_MAJORITY",
+  "publication_limits": [
+    "MACHINE_READABLE_NE_AI_ADOPTED",
+    "ROBOT_FETCH_NE_EDITORIAL_APPROVAL",
+    "CLAIMED_BENEFIT_NE_MEASURED_BENEFIT",
+    "IA_NE_CANONICAL_EXPANSION",
+    "HTTP_200_NE_FULL_SERVICE",
+    "SITE_LINK_NE_ENDORSEMENT",
+    "PERSONAL_WRITING_NE_INDEPENDENT_CIVIC_EVIDENCE",
+    "LINKS_NE_PARTNERSHIP_OR_ENDORSEMENT",
+    "PRESS_GUIDE_SOURCE_NE_BRANDED_SITE_DEPLOYMENT"
+  ],
+  "purpose": "Help ordinary readers investigate public fears through stories, competing explanations and evidence",
+  "reader_benefit_message": "Understand the question, inspect uncertainty, follow a source and challenge a proposal.",
+  "schema": "CoAll.CoSites.PublicSiteManifest.R0",
+  "site_id": "copolitic-public-research-prelaunch",
+  "site_name": "CoPolitic",
+  "source_verification": {
+    "human_glossary_sha256": "569eb3fa3d8a727265738b5e7c3f0f7cacba3b60ff2fb4f53f46ef099228503a",
+    "human_home_sha256": "7cc95dad293b3e139b4862cc7d2ec9ddb0b4ac7ac78c8b9405ad0241e71191ba",
+    "ia_term_sha256": "fe93134d31eab5a6031c397d7695b575eda428698d7727f9585b31099102a23f",
+    "predecessor_role": "BEFORE_THIS_MACHINE_MANIFEST_UPDATE",
+    "predecessor_verified_commit": "f0feaddb3ac5c67a81c35771540f3f03100c052d",
+    "repository": "CoCivium/CoPolitic-site",
+    "site_info_sha256": "34d58075e4657d83565a793723523f42a77b218787bcf9b704b7cab41b642d79",
+    "verification_scope": "EXACT_SOURCE_BYTES_NOT_INDEPENDENT_TRUTH_OR_VALID_LICENSE",
+    "press_guide_sha256": "e1c0fd2eef889952af8724d91af5f7d6f26a76ddbc3e93d69ba2a46c61ab81b6",
+    "home_git_blob_sha1": "6ed84daac0c43d9edadd57596247a5494e4f6aba",
+    "press_guide_git_blob_sha1": "959deb84f32d9d889f481b13c4ff45ac64c6dd23",
+    "local_x2_browser_qa": {
+      "receipt_sha256": "5896c6161180b35fdc1766ef6a9b7bc47067205f3bd45565beb132db5eea9197",
+      "checks": "30_OF_30_PASS_DESKTOP_AND_MOBILE__SYNTHETIC_BROWSER",
+      "limitations": "NOT_INDEPENDENT_HUMAN_QA_NOT_PUBLIC_DEPLOYMENT",
+      "rejected_prior_qa_sha256": "7c980ae0936af3d9a3682dd62cc36dacf511e6a73bc3afc01aa269928c7f0119"
+    },
+    "site_info_git_blob_sha1": "a370a66494ea60639e9179920413b0ef9abef3ae"
+  },
+  "term_records": [
+    {
+      "human_url": "https://cocivium.github.io/CoPolitic-site/ia.html#ia",
+      "label": "IA",
+      "status": "UNRESOLVED_GLOBAL_EXPANSION",
+      "url": "https://cocivium.github.io/CoPolitic-site/ai/terms/ia.json"
+    }
+  ],
+  "typed_site_relations": [
+    {
+      "claim": "Civic/AI cooperation information; no automatic endorsement or legal group entity merger",
+      "target": "https://www.cocivium.org/",
+      "type": "RELATED_PUBLIC_RESEARCH_PROJECT"
+    },
+    {
+      "claim": "Unmerged draft, not independent peer-reviewed policy",
+      "target": "https://github.com/CoCivium/CoPolitic-site/pull/2",
+      "type": "DRAFT_RESEARCH_MATERIAL"
+    },
+    {
+      "type": "SEPARATE_INFORMATIVE_CONSULTANCY",
+      "target": "https://inseed.com/",
+      "claim": "Separate commercial information only, not an approved sponsor, client, paid partner or independent authority"
+    },
+    {
+      "type": "PUBLIC_INDIVIDUAL_PROFILE",
+      "target": "https://www.linkedin.com/in/richardballard/",
+      "claim": "Rick Ballard public professional biography and third-party platform content; public profile is not independent certification of CoPolitic"
+    },
+    {
+      "type": "PERSONAL_PUBLICATION",
+      "target": "https://rickpublic.substack.com/",
+      "claim": "Personal essays/opinions by Rick, not CoPolitic official evidence or independently verified civic findings"
+    },
+    {
+      "type": "RELATED_EDUCATIONAL_SOURCE",
+      "target": "https://cocivium.github.io/CoAcademy/civic-integrity/",
+      "claim": "Public education only, not official policy, election findings or a commissioned newsroom"
+    }
+  ]
+}

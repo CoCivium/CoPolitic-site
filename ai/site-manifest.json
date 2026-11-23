@@ -129,15 +129,19 @@
       "domain_or_tls_change",
       "meaning_update",
       "independent_reader_counterexample"
-    ]
+    ],
+    "latest_journalist_source_review": "2026-11-23",
+    "deployed_source_update": "NOT_YET_RELEASED_THIS_CANDIDATE"
   },
   "human_explanation_urls": [
     "https://cocivium.github.io/CoPolitic-site/",
-    "https://cocivium.github.io/CoPolitic-site/ia.html"
+    "https://cocivium.github.io/CoPolitic-site/ia.html",
+    "https://cocivium.github.io/CoPolitic-site/press.html"
   ],
   "human_observable_pages": [
     "index.html",
-    "ia.html"
+    "ia.html",
+    "press.html"
   ],
   "impact_synthesis": "No net benefit, legal status, consciousness or universal consent inferred.",
   "intended_readers": [
@@ -150,7 +154,8 @@
     "existing_site_info": "https://cocivium.github.io/CoPolitic-site/site-info.json",
     "ia_glossary": "https://cocivium.github.io/CoPolitic-site/ai/terms/ia.json",
     "manifest": "https://cocivium.github.io/CoPolitic-site/ai/site-manifest.json",
-    "navigation": "https://cocivium.github.io/CoPolitic-site/ai/index.json"
+    "navigation": "https://cocivium.github.io/CoPolitic-site/ai/index.json",
+    "press_guide": "https://cocivium.github.io/CoPolitic-site/press.html"
   },
   "mission": "Support noncoercive public understanding and testable, challengeable civic hypotheses",
   "primary_audience_evidence": "NO_RELIABLE_MEASUREMENT_OF_AI_IA_MAJORITY",
@@ -160,7 +165,10 @@
     "CLAIMED_BENEFIT_NE_MEASURED_BENEFIT",
     "IA_NE_CANONICAL_EXPANSION",
     "HTTP_200_NE_FULL_SERVICE",
-    "SITE_LINK_NE_ENDORSEMENT"
+    "SITE_LINK_NE_ENDORSEMENT",
+    "PERSONAL_WRITING_NE_INDEPENDENT_CIVIC_EVIDENCE",
+    "LINKS_NE_PARTNERSHIP_OR_ENDORSEMENT",
+    "PRESS_GUIDE_SOURCE_NE_BRANDED_SITE_DEPLOYMENT"
   ],
   "purpose": "Help ordinary readers investigate public fears through stories, competing explanations and evidence",
   "reader_benefit_message": "Understand the question, inspect uncertainty, follow a source and challenge a proposal.",
@@ -169,13 +177,22 @@
   "site_name": "CoPolitic",
   "source_verification": {
     "human_glossary_sha256": "569eb3fa3d8a727265738b5e7c3f0f7cacba3b60ff2fb4f53f46ef099228503a",
-    "human_home_sha256": "f9f019dc8ff62555efe5df0e1a32b389393079ff3616466f7feed84d0db6e464",
+    "human_home_sha256": "7cc95dad293b3e139b4862cc7d2ec9ddb0b4ac7ac78c8b9405ad0241e71191ba",
     "ia_term_sha256": "fe93134d31eab5a6031c397d7695b575eda428698d7727f9585b31099102a23f",
     "predecessor_role": "BEFORE_THIS_MACHINE_MANIFEST_UPDATE",
     "predecessor_verified_commit": "f0feaddb3ac5c67a81c35771540f3f03100c052d",
     "repository": "CoCivium/CoPolitic-site",
-    "site_info_sha256": "03a3842e084d04a0a23a0fe0d35ee2b336e18cf6fe6ffc9bf25bc77b71b611e5",
-    "verification_scope": "EXACT_SOURCE_BYTES_NOT_INDEPENDENT_TRUTH_OR_VALID_LICENSE"
+    "site_info_sha256": "e5517a62960094f1139ef3d40da04f419a99aaacda9fc08dedd031e28d8df46d",
+    "verification_scope": "EXACT_SOURCE_BYTES_NOT_INDEPENDENT_TRUTH_OR_VALID_LICENSE",
+    "press_guide_sha256": "e1c0fd2eef889952af8724d91af5f7d6f26a76ddbc3e93d69ba2a46c61ab81b6",
+    "home_git_blob_sha1": "6ed84daac0c43d9edadd57596247a5494e4f6aba",
+    "press_guide_git_blob_sha1": "959deb84f32d9d889f481b13c4ff45ac64c6dd23",
+    "local_x2_browser_qa": {
+      "receipt_sha256": "5896c6161180b35fdc1766ef6a9b7bc47067205f3bd45565beb132db5eea9197",
+      "checks": "30_OF_30_PASS_DESKTOP_AND_MOBILE__SYNTHETIC_BROWSER",
+      "limitations": "NOT_INDEPENDENT_HUMAN_QA_NOT_PUBLIC_DEPLOYMENT",
+      "rejected_prior_qa_sha256": "7c980ae0936af3d9a3682dd62cc36dacf511e6a73bc3afc01aa269928c7f0119"
+    }
   },
   "term_records": [
     {
@@ -195,6 +212,26 @@
       "claim": "Unmerged draft, not independent peer-reviewed policy",
       "target": "https://github.com/CoCivium/CoPolitic-site/pull/2",
       "type": "DRAFT_RESEARCH_MATERIAL"
+    },
+    {
+      "type": "SEPARATE_INFORMATIVE_CONSULTANCY",
+      "target": "https://inseed.com/",
+      "claim": "Separate commercial information only, not an approved sponsor, client, paid partner or independent authority"
+    },
+    {
+      "type": "PUBLIC_INDIVIDUAL_PROFILE",
+      "target": "https://www.linkedin.com/in/richardballard/",
+      "claim": "Rick Ballard public professional biography and third-party platform content; public profile is not independent certification of CoPolitic"
+    },
+    {
+      "type": "PERSONAL_PUBLICATION",
+      "target": "https://rickpublic.substack.com/",
+      "claim": "Personal essays/opinions by Rick, not CoPolitic official evidence or independently verified civic findings"
+    },
+    {
+      "type": "RELATED_EDUCATIONAL_SOURCE",
+      "target": "https://cocivium.github.io/CoAcademy/civic-integrity/",
+      "claim": "Public education only, not official policy, election findings or a commissioned newsroom"
     }
   ]
 }

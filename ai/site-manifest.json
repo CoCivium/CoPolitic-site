@@ -130,8 +130,9 @@
       "meaning_update",
       "independent_reader_counterexample"
     ],
-    "latest_journalist_source_review": "2026-11-23",
-    "deployed_source_update": "SOURCE_NE_INDEPENDENT_PUBLIC_URL_READBACK"
+    "latest_journalist_source_review": "2026-11-24",
+    "deployed_source_update": "SOURCE_NE_INDEPENDENT_PUBLIC_URL_READBACK",
+    "research_crosswalk_state": "EXISTING_HUMAN_MACHINE_TWIN_SOURCE_QA_PASS__PUBLIC_DEPLOYMENT_PENDING"
   },
   "human_explanation_urls": [
     "https://cocivium.github.io/CoPolitic-site/",
@@ -155,7 +156,8 @@
     "ia_glossary": "https://cocivium.github.io/CoPolitic-site/ai/terms/ia.json",
     "manifest": "https://cocivium.github.io/CoPolitic-site/ai/site-manifest.json",
     "navigation": "https://cocivium.github.io/CoPolitic-site/ai/index.json",
-    "press_guide": "https://cocivium.github.io/CoPolitic-site/press.html"
+    "press_guide": "https://cocivium.github.io/CoPolitic-site/press.html",
+    "research_crosswalk": "https://cocivium.github.io/CoPolitic-site/ai/research-crosswalk-r0.json"
   },
   "mission": "Support noncoercive public understanding and testable, challengeable civic hypotheses",
   "primary_audience_evidence": "NO_RELIABLE_MEASUREMENT_OF_AI_IA_MAJORITY",
@@ -168,7 +170,10 @@
     "SITE_LINK_NE_ENDORSEMENT",
     "PERSONAL_WRITING_NE_INDEPENDENT_CIVIC_EVIDENCE",
     "LINKS_NE_PARTNERSHIP_OR_ENDORSEMENT",
-    "PRESS_GUIDE_SOURCE_NE_BRANDED_SITE_DEPLOYMENT"
+    "PRESS_GUIDE_SOURCE_NE_BRANDED_SITE_DEPLOYMENT",
+    "EXTERNAL_ETHICS_CODES_NE_MEMBERSHIP_OR_CERTIFICATION",
+    "PRIOR_ART_CITATION_NE_NOVELTY_OR_OPERATIONAL_PROOF",
+    "SEARCH_METADATA_NE_INDEXATION_OR_MEDIA_UPTAKE"
   ],
   "purpose": "Help ordinary readers investigate public fears through stories, competing explanations and evidence",
   "reader_benefit_message": "Understand the question, inspect uncertainty, follow a source and challenge a proposal.",
@@ -184,16 +189,19 @@
     "repository": "CoCivium/CoPolitic-site",
     "site_info_sha256": "34d58075e4657d83565a793723523f42a77b218787bcf9b704b7cab41b642d79",
     "verification_scope": "EXACT_SOURCE_BYTES_NOT_INDEPENDENT_TRUTH_OR_VALID_LICENSE",
-    "press_guide_sha256": "e1c0fd2eef889952af8724d91af5f7d6f26a76ddbc3e93d69ba2a46c61ab81b6",
+    "press_guide_sha256": "d82e74037299bdb6f7b578147599ed8da8d53e5477bc350b638373c35636f0d2",
     "home_git_blob_sha1": "6ed84daac0c43d9edadd57596247a5494e4f6aba",
-    "press_guide_git_blob_sha1": "959deb84f32d9d889f481b13c4ff45ac64c6dd23",
+    "press_guide_git_blob_sha1": "3f5989c6aeb855d4c88e00d8d8ceaf2419f33a59",
     "local_x2_browser_qa": {
       "receipt_sha256": "5896c6161180b35fdc1766ef6a9b7bc47067205f3bd45565beb132db5eea9197",
       "checks": "30_OF_30_PASS_DESKTOP_AND_MOBILE__SYNTHETIC_BROWSER",
       "limitations": "NOT_INDEPENDENT_HUMAN_QA_NOT_PUBLIC_DEPLOYMENT",
       "rejected_prior_qa_sha256": "7c980ae0936af3d9a3682dd62cc36dacf511e6a73bc3afc01aa269928c7f0119"
     },
-    "site_info_git_blob_sha1": "a370a66494ea60639e9179920413b0ef9abef3ae"
+    "site_info_git_blob_sha1": "a370a66494ea60639e9179920413b0ef9abef3ae",
+    "research_crosswalk_sha256": "d9d7d5f59782f10a7e248e74b55225ec1033c55010a5a3d4d5c5a1ae0cfd9313",
+    "research_crosswalk_git_blob_sha1": "a9639bfe14f11b096537a6a1c3caea24ca20ecaa",
+    "research_crosswalk_local_qa_receipt_sha256": "b229319af7088fad823555810217f9f71662a060fda059b38f1f068d97bee99a"
   },
   "term_records": [
     {

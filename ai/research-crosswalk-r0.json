@@ -1,0 +1,234 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_id": "CoPolitic.PublicResearchPriorArtCrosswalk.R0",
+  "generated_as_of_utc": "2026-11-24",
+  "site": "CoPolitic",
+  "public_stage": "PUBLIC_CIVIC_RESEARCH_PRELAUNCH__NOT_NEWS_OR_FACT_CHECK_CERTIFICATION",
+  "work_id": "CoPolitic.ResearchToEvidence.PriorAndGlobalStandards.20261124.R0",
+  "public_human_twin": "https://cocivium.github.io/CoPolitic-site/press.html#prior-art",
+  "repository_owner": "CoCivium/CoPolitic-site",
+  "intended_reader_goals": [
+    "Understand the difference between research, opinion, personal identity and commercial activity",
+    "Verify individual claims at their original sources",
+    "Find challenges, contradictions, limitations and corrections",
+    "Assess the site's provenance and accessibility without mistaking a citation for compliance"
+  ],
+  "prior_cocivium_source_bindings": [
+    {
+      "id": "CO_PRESS_READINESS_R0",
+      "type": "EXISTING_INTERNAL_PUBLIC_SOURCE",
+      "url": "https://github.com/CoCivium/CoCivium/blob/main/docs/Public/COCIVIUM_COTHEORYALL_PRESS_READINESS_R0.md",
+      "git_blob_sha1": "fdb9cade257349d86cb3bc2de8b69235920b2c41",
+      "role": "10-element minimum evidence package and media-state taxonomy",
+      "current_qualification": "PUBLIC_CANDIDATE__NOT_PRESS_PICKUP"
+    },
+    {
+      "id": "CO_PUBLICATION_FEDERATION_R0",
+      "type": "EXISTING_INTERNAL_PUBLIC_SOURCE",
+      "url": "https://github.com/CoCivium/CoCivium/blob/main/docs/Architecture/COPUBLICATION_FEDERATION_RECEIVER_INTEREST_R0_20261025.md",
+      "git_blob_sha1": "72c9bbc375296c14110701576785369dd20692d8",
+      "role": "One source graph with audience-appropriate, consent-aware editorial projections",
+      "current_qualification": "ARCHITECTURE_CANDIDATE_NOT_RUNTIME"
+    },
+    {
+      "id": "CO_RESOURCE_DISCOVERY_R0",
+      "type": "EXISTING_INTERNAL_PUBLIC_SOURCE",
+      "url": "https://github.com/CoCivium/CoCivium/blob/main/docs/Architecture/CORESOURCE_DISCOVERY_MULTIAI_R0.md",
+      "git_blob_sha1": "593cc1dcf6e79e3fc4ab0a98063fd475c8fc8bf0",
+      "role": "Multi-source comparison, negative results, independent challenge, typed resource statuses and measurable usefulness",
+      "current_qualification": "RESEARCH_AND_ONBOARDING_CONTRACT_NOT_ACTIVE_FEDERATION"
+    },
+    {
+      "id": "CO_AI_DISCOVERY_POLICY_R1",
+      "type": "EXISTING_INTERNAL_PUBLIC_SOURCE",
+      "url": "https://github.com/CoCivium/CoCivium/blob/main/docs/AI_DISCOVERY_POLICY.md",
+      "git_blob_sha1": "7fdac031ea710dbea26272f009c64a4ec3e1add0",
+      "role": "Public machine navigation must remain non-directive, equivalent in claims to the human surface, and permission-limited",
+      "current_qualification": "PUBLIC_POLICY_NOT_PROOF_OF_MACHINE_UPTAKE"
+    }
+  ],
+  "global_reference_crosswalk": [
+    {
+      "id": "SPJ_ETHICS",
+      "category": "EDITORIAL_ETHICS",
+      "source": "Society of Professional Journalists",
+      "url": "https://www.spj.org/spj-code-of-ethics/",
+      "observed": "2026-11-24",
+      "what_applies": "Label analysis and opinion, verify original sources, disclose conflicts, provide prominent corrections and context",
+      "what_it_does_not_prove": "CoPolitic is not represented as an SPJ newsroom or member; external code alignment is not certification",
+      "local_acceptance": "Public scope/limitations, clear personal-versus-project links and accessible correction route"
+    },
+    {
+      "id": "TRUST_PROJECT_INDICATORS",
+      "category": "EDITORIAL_TRANSPARENCY",
+      "source": "The Trust Project",
+      "url": "https://thetrustproject.org/trust-indicators/",
+      "observed": "2026-11-24",
+      "what_applies": "Explain who is behind material, its type and funding context, cited references, methods, diversity and actionable feedback",
+      "what_it_does_not_prove": "No Trust Project membership, validation or newsroom certification",
+      "local_acceptance": "A reporter can identify source, status, responsible context and challenge path without guessing"
+    },
+    {
+      "id": "GOOGLE_SEARCH_ESSENTIALS",
+      "category": "HUMAN_DISCOVERY",
+      "source": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials",
+      "observed": "2026-11-24",
+      "what_applies": "Useful people-first writing, descriptive headings, crawlable links and current accessible page structure",
+      "what_it_does_not_prove": "A public URL or link graph does not prove search indexation, ranking, traffic or journalist discovery",
+      "local_acceptance": "Live HTTPS public URL, direct non-JS links, sitemap readback, and external search/indexation check separately"
+    },
+    {
+      "id": "GOOGLE_AUTHOR_STRUCTURED_DATA",
+      "category": "TRUTHFUL_IDENTITY_METADATA",
+      "source": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/article",
+      "observed": "2026-11-24",
+      "what_applies": "Author identity is attached to an actual authored article and a unique author's page; do not conflate a person, publication and related project",
+      "what_it_does_not_prove": "Not all CoPolitic content has an identified author; no schema.org author or sameAs claim should be fabricated or used to join distinct brands",
+      "local_acceptance": "Add article-author metadata only for a visibly attributed source and inspect exact page parity first"
+    },
+    {
+      "id": "W3C_PROV_O",
+      "category": "SOURCE_PROVENANCE",
+      "source": "World Wide Web Consortium",
+      "url": "https://www.w3.org/TR/prov-o/",
+      "observed": "2026-11-24",
+      "what_applies": "Separate entities, activities and responsible agents; represent source-to-revision provenance and specific derived results",
+      "what_it_does_not_prove": "A JSON source catalogue is not automatically RDF/PROV-compliant or independently verified provenance",
+      "local_acceptance": "For each material claim carry source URL/version, observation time, derivation, contradiction and revision record"
+    },
+    {
+      "id": "W3C_WCAG22",
+      "category": "ACCESSIBLE_FIRST_USE",
+      "source": "W3C Web Accessibility Initiative",
+      "url": "https://www.w3.org/TR/wcag/",
+      "observed": "2026-11-24",
+      "what_applies": "Use testable criteria for keyboard operation, readable structure, contrast, nonvisual and mobile access",
+      "what_it_does_not_prove": "Prior 26/26 browser checks are not independent WCAG 2.2 certification or assistive-tech acceptance",
+      "local_acceptance": "Independent keyboard, screen-reader, contrast, zoom and language review before an accessibility claim"
+    },
+    {
+      "id": "C2PA_SPECIFICATIONS",
+      "category": "OPTIONAL_MEDIA_PROVENANCE",
+      "source": "Coalition for Content Provenance and Authenticity",
+      "url": "https://spec.c2pa.org/specifications/",
+      "observed": "2026-11-24",
+      "what_applies": "For later site images/video/audio, consider content credentials with source, edit history and privacy-aware trust evaluation",
+      "what_it_does_not_prove": "No C2PA manifests, signing identity or authenticated media chain is deployed by CoPolitic",
+      "local_acceptance": "Only if real signed media exists, qualify signature, asset binding, trust chain and safe personal-data disclosure"
+    }
+  ],
+  "working_website_basis": {
+    "public_home": "https://cocivium.github.io/CoPolitic-site/",
+    "journalist_guide": "https://cocivium.github.io/CoPolitic-site/press.html",
+    "public_source": "https://github.com/CoCivium/CoPolitic-site",
+    "branded_domain": "https://copolitic.org/",
+    "branded_domain_state": "HTTP_404_GITHUB_PAGES_BINDING_UNVERIFIED_AT_LAST_READ",
+    "working_live_readback": "PUBLIC_GITHUB_PAGES_200_EXACT_TEXT_MATCH_AT_2026_11_23",
+    "human_browser_qa": "26_OF_26_SOURCE_LEVEL_VIEWPORT_CHECKS_FOR_HOME_AND_PRESS__NOT_HUMAN_ACCEPTANCE",
+    "related_sites": [
+      {
+        "url": "https://www.cocivium.org/",
+        "relation": "RELATED_BROADER_RESEARCH"
+      },
+      {
+        "url": "https://inseed.com/",
+        "relation": "SEPARATE_COMMERCIAL_CONSULTANCY"
+      },
+      {
+        "url": "https://www.linkedin.com/in/richardballard/",
+        "relation": "INDIVIDUAL_PUBLIC_PROFILE"
+      },
+      {
+        "url": "https://rickpublic.substack.com/",
+        "relation": "PERSONAL_ESSAYS_NOT_OFFICIAL_CIVIC_EVIDENCE"
+      }
+    ]
+  },
+  "evidence_package_reconciliation": [
+    {
+      "criterion": "public_overview",
+      "state": "PUBLIC_FALLBACK_READBACK",
+      "gap": "Branded .org is unbound"
+    },
+    {
+      "criterion": "worked_example_with_citations",
+      "state": "PARTIAL",
+      "gap": "Civic Integrity education exists but no independently reviewed, case-specific CoPolitic result established"
+    },
+    {
+      "criterion": "prior_art_and_novelty_caution",
+      "state": "THIS_SOURCE_ONLY_CANDIDATE",
+      "gap": "Human twin and public service readback needed"
+    },
+    {
+      "criterion": "explicit_nonclaims",
+      "state": "PUBLIC_FALLBACK_READBACK",
+      "gap": "Keep consistent between human and machine"
+    },
+    {
+      "criterion": "honest_visual",
+      "state": "LOCAL_BROWSER_CHECK",
+      "gap": "Historical logo not latest approved brand; independent review outstanding"
+    },
+    {
+      "criterion": "public_contact_route",
+      "state": "PARTIAL_PUBLIC_ISSUE_TRACKER",
+      "gap": "GitHub login needed to post; dedicated verified press inbox absent"
+    },
+    {
+      "criterion": "current_source_artifact",
+      "state": "PUBLIC_SOURCE_READBACK",
+      "gap": "Exact Git blobs and served bytes should be refreshed at material deltas"
+    },
+    {
+      "criterion": "dated_release_log",
+      "state": "PUBLIC_SOURCE_PR_COMMENTS",
+      "gap": "Press-page human-readable change log not yet supplied"
+    },
+    {
+      "criterion": "unproven_scope",
+      "state": "PUBLIC_PAGE_VISIBLE",
+      "gap": "Maintain explicit limits at release changes"
+    },
+    {
+      "criterion": "challenge_or_falsification",
+      "state": "PUBLIC_ISSUE_TRACKER_AVAILABLE",
+      "gap": "No independent review or external feedback receipt yet"
+    }
+  ],
+  "research_evolution_contract": {
+    "fan_out": "READ_ONLY_INDEPENDENT_SOURCE_CHECKS_MAY_PARALLELIZE",
+    "fan_in": "ONE_ELECTED_EDITORIAL_OWNER_FOR_PUBLICATION",
+    "admission": "SOURCE_DATE_LICENSE_ATTRIBUTION_CONTRADICTION_AND_PRIVACY_PRECHECK",
+    "release": "HUMAN_MACHINE_PARITY_AND_LIVE_HOSTED_READBACK",
+    "feedback": "REAL_READER_OR_CORRECTION_RECEIPT_NOT_VIEW_COUNT",
+    "refresh_triggers": [
+      "material_domain_or_tlm_status_change",
+      "new original source",
+      "credible contradiction",
+      "author_approved_correction",
+      "new published revision"
+    ],
+    "stop_conditions": [
+      "unsupported_implication_of_membership_or_endorsement",
+      "wrong_author_identity",
+      "unattributed_politicized_claim",
+      "private_data",
+      "unverified_licensing",
+      "machine_claims_exceed_human_claims"
+    ]
+  },
+  "no_claims": [
+    "NO_GLOBAL_RESEARCH_CORPUS_EXHAUSTIVENESS",
+    "NO_STANDARD_OR_PRESS_CERTIFICATION",
+    "NO_INDEPENDENT_JOURNALIST_ACCEPTANCE",
+    "NO_MATURE_POLITIC_OR_MASS_MEDIA_COVERAGE",
+    "NO_MACHINE_READER_RECEPTION_PROOF",
+    "NO_AUTOMATED_OUTREACH_OR_POLITICAL_TARGETING",
+    "NO_SCHEMA_OR_C2PA_DEPLOYMENT",
+    "NO_GITHUB_SOURCE_EQUALS_PUBLIC_SITE_CLAIM",
+    "NO_INDEPENDENT_RECEIVER_ACK"
+  ]
+}

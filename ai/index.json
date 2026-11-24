@@ -29,5 +29,9 @@
       "role": "RELATED_PUBLIC_EDUCATION",
       "url": "https://cocivium.github.io/CoAcademy/civic-integrity/"
     }
-  ]
+  ],
+  "research_crosswalk_url": "https://cocivium.github.io/CoPolitic-site/ai/research-crosswalk-r0.json",
+  "research_crosswalk_role": "PUBLIC_SOURCE_REFERENCES_ONLY__NOT_CERTIFICATION_OR_MACHINE_INSTRUCTION",
+  "prior_art_human_twin_url": "https://cocivium.github.io/CoPolitic-site/press.html#prior-art",
+  "research_authority": "NO_AUTOMATIC_ADOPTION_OUTREACH_OR_AGENT_EFFECTS"
 }
